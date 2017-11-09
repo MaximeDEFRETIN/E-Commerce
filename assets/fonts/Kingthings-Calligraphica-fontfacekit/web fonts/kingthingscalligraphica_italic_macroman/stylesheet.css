@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'kingthings_callicalligraphica';
+    src: url('../fonts/Kingthings_Calligraphica_Italic-webfont.eot');
+    src: url('../fonts/Kingthings_Calligraphica_Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Kingthings_Calligraphica_Italic-webfont.woff2') format('woff2'),
+         url('../fonts/Kingthings_Calligraphica_Italic-webfont.woff') format('woff'),
+         url('../fonts/Kingthings_Calligraphica_Italic-webfont.ttf') format('truetype'),
+         url('../fonts/Kingthings_Calligraphica_Italic-webfont.svg#kingthings_callicalligraphica') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
