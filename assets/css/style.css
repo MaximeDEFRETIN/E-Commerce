@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'kingthings_callicalligraphica';
+    src: url('../fonts/Kingthings-Calligraphica-fontfacekit/web fonts/kingthingscalligraphica_italic_macroman/Kingthings_Calligraphica_Italic-webfont.eot');
+    src: url('../fonts/Kingthings-Calligraphica-fontfacekit/web fonts/kingthingscalligraphica_italic_macroman/Kingthings_Calligraphica_Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Kingthings-Calligraphica-fontfacekit/web fonts/kingthingscalligraphica_italic_macroman/Kingthings_Calligraphica_Italic-webfont.woff2') format('woff2'),
+         url('../fonts/Kingthings-Calligraphica-fontfacekit/web fonts/kingthingscalligraphica_italic_macroman/Kingthings_Calligraphica_Italic-webfont.woff') format('woff'),
+         url('../fonts/Kingthings-Calligraphica-fontfacekit/web fonts/kingthingscalligraphica_italic_macroman/Kingthings_Calligraphica_Italic-webfont.ttf') format('truetype'),
+         url('../fonts/Kingthings-Calligraphica-fontfacekit/web fonts/kingthingscalligraphica_italic_macroman/Kingthings_Calligraphica_Italic-webfont.svg#kingthings_callicalligraphica') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+  background-color: #cccccc;
+  background-image: url(../img/triskel.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 0;
+  background-size: 40%;
+  background-position: 550px 150px;
+}
+ul li, .navbar-brand {
+  font-family: 'kingthings_callicalligraphica';
+  font-size: 30px;
+}
+h2 {
+  font-family: 'kingthings_callicalligraphica';
+  font-size: 50px;
+  margin-bottom: 35px;
+  margin-left: 15px;
+}
+figure {
+  margin-bottom: 100px;
+  height: 250px;
+}
+figure img {
+  margin-left: 16%;
+  height: 200px;
+  width: 200px;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+.titre {
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  background-color: white;
+}
+.price {
+  text-decoration: overline;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  background-color: white;
+}
+figure input {
+  margin-top: 5px;
+  margin-left: 60px;
+}
+/* Faire une mediaquery sur figure avec un width de 150px en xs */
