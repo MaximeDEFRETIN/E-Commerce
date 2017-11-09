@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/iconfonts.css">
   <link rel="stylesheet" href="/css/responsiveSmartPhone.css">
@@ -15,7 +16,7 @@
     </div>
   </div>
   <div class="row">
-    <nav class="navbar navbar-inverse">
+    <!--<nav class="navbar navbar-inverse">
       <div class="container-fluid">
           <div class="navbar-header">
             <a class="navbar-brand" href="#">@</a>
@@ -30,7 +31,30 @@
           </ul>
       </div>
     </nav>
-  </div>
+  </div>-->
+  <nav class="navbar navbar-inverse">
+   <div class="container-fluid">
+     <div class="navbar-header">
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" id="buttonNavbar">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="#">@</a>
+     </div>
+     <div class="collapse navbar-collapse" id="myNavbar">
+       <ul class="nav navbar-nav">
+         <li class="active"><a href="#">@</a></li>
+         <li><a href="#">Nourritures</a></li>
+         <li><a href="#">Vêtements</a></li>
+         <li><a href="#">Ustensiles</a></li>
+         <li><a href="#">Musiques</a></li>
+         <li><a href="#">Livres</a></li>
+         <li><a href="#">Jeux - Décos</a></li>
+       </ul>
+     </div>
+   </div>
+ </nav>
   <!--Rubrique nourriture-->
   <section id="food">
     <h2>Nourritures</h2>
@@ -349,6 +373,7 @@
     </figure>
   </div>
 </section>
+<script src="assets/js/jsNavbar.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery-3.2.1.js"></script>
 </body>
