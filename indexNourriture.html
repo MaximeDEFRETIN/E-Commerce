@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/iconfonts.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Le pti Breton</title>
+</head>
+<body class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12">
+      <img src="assets/img/image.jpg" alt="image" title="image" />
+    </div>
+  </div>
+  <div class="row">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">@</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="#">Nourritures</a></li>
+            <li><a href="#">Vêtements</a></li>
+            <li><a href="#">Ustensiles</a></li>
+            <li><a href="#">Musiques</a></li>
+            <li><a href="#">Livres</a></li>
+            <li><a href="#">Jeux - Décos</a></li>
+          </ul>
+      </div>
+    </nav>
+  </div>
+  <!--Rubrique nourriture-->
+  <section id="food">
+    <h2>Nourritures</h2>
+    <!--Tous les éléments se trouve dans une ligne-->
+    <div class="row">
+      <!--On met 5 images par ligne-->
+      <div class="col-lg-offset-1 col-lg-2">
+        <figure id="boitegateau">
+          <img src="assets/img/nourriture/boitegateau.jpeg" title="Boite de gâteau" alt="Boite de gâteau" height="200px" width="200px"></img>
+          <figcaption>Boite de gâteau</figcaption>
+          <figcaption class="price">Prix: 10hermines</figcaption>
+          <!--Avec l'attribut hidden, on cache les éléents span-->
+          <span hidden="hidden">Boite de gâteau, 10hermines</span>
+          <input type="button" name="panier" value="Panier">
+        </figure>
+      </div>
+      <div class="col-lg-2">
+        <figure id="crepecaramelbeurresalé">
+          <img src="assets/img/nourriture/crepecaramelbeurresalé.jpeg" title="Crêpe au caramel au beurre salé" alt="Crêpe au caramel au beurre salé" height="200px" width="200px"></img>
+          <figcaption>Crêpe au caramel au beurre salé</figcaption>
+          <figcaption class="price">Prix: 10hermines</figcaption>
+          <span hidden="hidden">Crêpe au caramel au beurre salé, 10hermines</span>
+          <input type="button" name="panier" value="Panier">
+        </figure>
+      </div>
+      <div class="col-lg-2">
+        <figure id="crepechocolat">
+          <img src="assets/img/nourriture/crepechocolat.jpeg" title="Crêpe au chocolat" alt="Crêpe au chocolat" height="200px" width="200px"></img>
+          <figcaption>Crêpe au chocolat</figcaption>
+          <figcaption class="price">Prix: 10hermines</figcaption>
+          <span hidden="hidden">Crêpe au chocolat, 10hermines</span>
+          <input type="button" name="panier" value="Panier">
+        </figure>
+      </div>
+      <div class="col-lg-2">
+        <figure id="crepepaysanbreton">
+          <img src="assets/img/nourriture/crepepaysanbreton.jpeg" title="Crêpe paysan breton" alt="Crêpe paysan breton" height="200px" width="200px"></img>
+          <figcaption>Crêpe paysan breton</figcaption>
+          <figcaption class="price">Prix: 10hermines</figcaption>
+          <span hidden="hidden">Crêpe paysan breton, 10 hermines</span>
+          <input type="button" name="panier" value="Panier">
+        </figure>
+      </div>
+      <div class="col-lg-2">
+        <figure id="galette">
+          <img src="assets/img/nourriture/galette.jpeg" title="Galettes" alt="Galettes" height="200px" width="200px"></img>
+          <figcaption>Galettes</figcaption>
+          <figcaption class="price">Prix: 10hermines</figcaption>
+          <span>Galettes, 10 hermines</span>
+          <input type="button" name="panier" value="Panier">
+        </figure>
+      </div>
+      <div class="col-lg-offset-1 col-lg-2">
+        <figure id="galettelardons">
+          <img src="assets/img/nourriture/galettelardons.jpeg" title="Galettes au blé noir" alt="Galettes au blé noir" height="200px" width="200px"></img>
+          <figcaption>Galettes au blé noir</figcaption>
+          <figcaption class="price">Prix: 10hermines</figcaption>
+          <span hidden="hidden">Galettes au blé noir, 10 hermines</span>
+          <input type="button" name="panier" value="Panier">
+        </figure>
+      </div>
+      <div class="col-lg-2">
+        <figure id="galettesaucisse">
+          <img src="assets/img/nourriture/galettesaucisse.jpeg" title="Galette-saucisses" alt="Galette-saucisses" height="200px" width="200px"></img>
+          <figcaption>Galette-saucisses</figcaption>
+          <figcaption class="price">Prix: 10hermines</figcaption>
+          <span hidden="hidden">Galette-saucisses, 10 hermines</span>
+          <input type="button" name="panier" value="Panier">
+        </figure>
+      </div>
+      <div class="col-lg-2">
+        <figure id="kouignamann1">
+          <img src="assets/img/nourriture/kouignamann1.jpeg" title="Kouignamann" alt="Kouignamann" height="200px" width="200px"></img>
+          <figcaption>Kouignamann</figcaption>
+          <figcaption class="price">Prix: 10hermines</figcaption>
+          <span hidden="hidden">Kouignamann, 10 hermines</span>
+          <input type="button" name="panier" value="Panier">
+        </figure>
+      </div>
+      <div class="col-lg-2">
+        <figure id="kouignamann3">
+          <img src="assets/img/nourriture/kouignamann3.jpeg" title="Kouignamann" alt="Kouignamann" height="200px" width="200px"></img>
+          <figcaption>Kouignamann</figcaption>
+          <figcaption class="price">Prix: 10hermines</figcaption>
+          <span hidden="hidden">Kouignamann, 10 hermines</span>
+          <input type="button" name="panier" value="Panier">
+        </figure>
+      </div>
+      <div class="col-lg-2">
+        <figure id="kouignamann">
+          <img src="assets/img/nourriture/kouignamann.jpeg" title="Kouignamann" alt="Kouignamann" height="200px" width="200px"></img>
+          <figcaption>Kouignamann</figcaption>
+          <figcaption class="price">Prix: 10hermines</figcaption>
+          <span hidden="hidden">Kouignamann, 10 hermines</span>
+          <input type="button" name="panier" value="Panier">
+        </figure>
+      </div>
+      <div class="col-lg-offset-1 col-lg-2">
+        <figure id="paletbretonboite">
+          <img src="assets/img/nourriture/paletbretonboite.jpeg" title="Boite de palet breton" alt="Boite de palet breton" height="200px" width="200px"></img>
+          <figcaption>Boite de palet breton</figcaption>
+          <figcaption class="price">Prix: 10hermines</figcaption>
+          <span hidden="hidden">Boite de palet breton, 10 hermines</span>
+          <input type="button" name="panier" value="Panier">
+        </figure>
+      </div>
+      <div class="col-lg-2">
+        <figure id="paletbreton">
+          <img src="assets/img/nourriture/paletbreton.jpeg" title="Palet breton" alt="Palet breton" height="200px" width="200px"></img>
+          <figcaption>Palet breton</figcaption>
+          <figcaption class="price">Prix: 10hermines</figcaption>
+          <span hidden="hidden">Palet breton, 10 hermines</span>
+          <input type="button" name="panier" value="Panier">
+        </figure>
+      </div>
+      <div class="col-lg-2">
+        <figure id="quatrequartmadelaine">
+          <img src="assets/img/nourriture/quatrequartmadelaine.jpeg" title="Le petit quatre-quarts" alt="Le petit quatre-quarts" height="200px" width="200px"></img>
+          <figcaption>Le petit quatre-quarts</figcaption>
+          <figcaption class="price">Prix: 10hermines</figcaption>
+          <span hidden="hidden">Le petit quatre-quarts, 10 hermines</span>
+          <input type="button" name="panier" value="Panier">
+        </figure>
+      </div>
+      <div class="col-lg-2">
+        <figure id="patecampagne">
+          <img src="assets/img/nourriture/patecampagne.jpeg" title="Paté de campagne" alt="Paté de campagne" height="200px" width="200px"></img>
+          <figcaption>Paté de campagne</figcaption>
+          <figcaption class="price">Prix: 10hermines</figcaption>
+          <span hidden="hidden">Paté de campagne, 10 hermines</span>
+          <input type="button" name="panier" value="Panier">
+        </figure>
+      </div>
+      <div class="col-lg-2">
+        <figure id="patehenaff">
+          <img src="assets/img/nourriture/patehenaff.jpeg" title="Paté Hénaff" alt="Paté Hénaff" height="200px" width="200px"></img>
+          <figcaption>Paté Hénaff</figcaption>
+          <figcaption class="price">Prix: 10hermines</figcaption>
+          <span hidden="hidden">Paté Hénaff, 10 hermines</span>
+          <input type="button" name="panier" value="Panier">
+        </figure>
+      </div>
+      <div class="col-lg-offset-1 col-lg-2">
+        <figure id="quatrequartchocolat">
+          <img src="assets/img/nourriture/quatrequartchocolat.jpeg" title="Quatre-quarts au chocolat" alt="Quatre-quarts au chocolat" height="200px" width="200px"></img>
+          <figcaption>Quatre-quarts au chocolat</figcaption>
+          <figcaption class="price">Prix: 10hermines</figcaption>
+          <span hidden="hidden">Quatre-quarts au chocolat, 10 hermines</span>
+          <input type="button" name="panier" value="Panier">
+        </figure>
+      </div>
+      <div class="col-lg-2">
+        <figure id="quatrequart">
+          <img src="assets/img/nourriture/quatrequart.jpeg" title="Quater-quarts" alt="Quater-quarts" height="200px" width="200px"></img>
+          <figcaption>Quater-quarts</figcaption>
+          <figcaption class="price">Prix: 10hermines</figcaption>
+          <span hidden="hidden">Quater-quarts, 10 hermines</span>
+          <input type="button" name="panier" value="Panier">
+        </figure>
+      </div>
+  </section>
+<!--Section décoration et jeu-->
+<section id="food">
+  <h2>Nourritures</h2>
+  <div class="col-lg-offset-1 col-lg-2">
+    <figure id="Abreton">
+      <img src="assets/img/decoration/Abreton.jpeg" title="Abreton" alt="Abreton" height="200px" width="200px"></img>
+      <figcaption>Abreton</figcaption>
+      <figcaption class="price">Prix: 10hermines</figcaption>
+      <span hidden="hidden">Abreton, 10 hermines</span>
+      <input type="button" name="panier" value="Panier">
+    </figure>
+  </div>
+  <div class="col-lg-2">
+    <figure id="autocollantBZH">
+      <img src="assets/img/decoration/autocollantBZH.jpeg" title="Autocollant" alt="Autocollant" height="200px" width="200px"></img>
+      <figcaption>Autocollant</figcaption>
+      <figcaption class="price">Prix: 10hermines</figcaption>
+      <span hidden="hidden">Autocollant, 10 hermines</span>
+      <input type="button" name="panier" value="Panier">
+    </figure>
+  </div>
+  <div class="col-lg-2">
+    <figure id="boulebretonne">
+      <img src="assets/img/decoration/.jpeg" title="Boule bretonne" alt="Boule bretonne" height="200px" width="200px"></img>
+      <figcaption></figcaption>
+      <figcaption class="price">Prix: 10hermines</figcaption>
+      <span hidden="hidden">Boule breton, 10 hermines</span>
+      <input type="button" name="panier" value="Panier">
+    </figure>
+  </div>
+  <div class="col-lg-2">
+    <figure id="bouledenoel">
+      <img src="assets/img/decoration/bouledenoel.jpeg" title="Boule de Noël" alt="Boule de Noël" height="200px" width="200px"></img>
+      <figcaption>Boule de Noël</figcaption>
+      <figcaption class="price">Prix: 10hermines</figcaption>
+      <span hidden="hidden">Boule de Noël, 10 hermines</span>
+      <input type="button" name="panier" value="Panier">
+    </figure>
+  </div>
+  <div class="col-lg-2">
+    <figure id="cendrier">
+      <img src="assets/img/decoration/cendrier.jpeg" title="Cendrier" alt="Cendrier" height="200px" width="200px"></img>
+      <figcaption>Cendrier</figcaption>
+      <figcaption class="price">Prix: 10hermines</figcaption>
+      <span hidden="hidden">Cendrier, 10 hermines</span>
+      <input type="button" name="panier" value="Panier">
+    </figure>
+  </div>
+  <div class="col-lg-offset-1 col-lg-2">
+    <figure id="">
+      <img src="assets/img/decoration/decapsuleurbreton.jpeg" title="Décpsuleur breton" alt="Décpsuleur breton" height="200px" width="200px"></img>
+      <figcaption>Décpsuleur breton</figcaption>
+      <figcaption class="price">Prix: 10hermines</figcaption>
+      <span hidden="hidden">Décpsuleur breton, 10 hermines</span>
+      <input type="button" name="panier" value="Panier">
+    </figure>
+  </div>
+  <div class="col-lg-2">
+    <figure id="">
+      <img src="assets/img/decoration/drapeaudebureau.jpeg" title="Drapeau de bureau" alt="Drapeau de bureau" height="200px" width="200px"></img>
+      <figcaption>Drapeau de bureau</figcaption>
+      <figcaption class="price">Prix: 10hermines</figcaption>
+      <span hidden="hidden">Drapeau de bureau, 10 hermines</span>
+      <input type="button" name="panier" value="Panier">
+    </figure>
+  </div>
+  <div class="col-lg-2">
+    <figure id="faniobreton">
+      <img src="assets/img/decoration/faniobreton.jpeg" title="Fanion breton" alt="Fanion breton" height="200px" width="200px"></img>
+      <figcaption>Fanion breton</figcaption>
+      <figcaption class="price">Prix: 10hermines</figcaption>
+      <span hidden="hidden">Fanion breton, 10 hermines</span>
+      <input type="button" name="panier" value="Panier">
+    </figure>
+  </div>
+  <div class="col-lg-2">
+    <figure id="foulard">
+      <img src="assets/img/decoration/foulard.jpeg" title="Foulard" alt="Foulard" height="200px" width="200px"></img>
+      <figcaption>Foulard</figcaption>
+      <figcaption class="price">Prix: 10hermines</figcaption>
+      <span hidden="hidden">Foulard, 10 hermines</span>
+      <input type="button" name="panier" value="Panier">
+    </figure>
+  </div>
+  <div class="col-lg-2">
+    <figure id="jeuxde12palets">
+      <img src="assets/img/decoration/jeuxde12palets.jpeg" title="Jeux de 12 palets" alt="Jeux de 12 palets" height="200px" width="200px"></img>
+      <figcaption>Jeux de 12 palets</figcaption>
+      <figcaption class="price">Prix: 10hermines</figcaption>
+      <span hidden="hidden">Jeux de 12 palets, 10 hermines</span>
+      <input type="button" name="panier" value="Panier">
+    </figure>
+  </div>
+  <div class="col-lg-offset-1 col-lg-2">
+    <figure id="saccabas">
+      <img src="assets/img/decoration/saccabas.jpeg" title="Sac cabas" alt="Sac cabas" height="200px" width="200px"></img>
+      <figcaption>Sac cabas</figcaption>
+      <figcaption class="price">Prix: 10hermines</figcaption>
+      <span hidden="hidden">Sac cabas, 10 hermines</span>
+      <input type="button" name="panier" value="Panier">
+    </figure>
+  </div>
+  <div class="col-lg-2">
+    <figure id="jeuxpaletbreton">
+      <img src="assets/img/decoration/jeuxpaletbreton.jpeg" title="Palet breton (jeu)" alt="Palet breton (jeu)" height="200px" width="200px"></img>
+      <figcaption>Palet breton (jeu)</figcaption>
+      <figcaption class="price">Prix: 10hermines</figcaption>
+      <span hidden="hidden">Palet breton (jeu), 10 hermines</span>
+      <input type="button" name="panier" value="Panier">
+    </figure>
+  </div>
+  <div class="col-lg-2">
+    <figure id="panolie">
+      <img src="assets/img/decoration/panolie.jpeg" title="Panoplie" alt="Panoplie" height="200px" width="200px"></img>
+      <figcaption>Panoplie</figcaption>
+      <figcaption class="price">Prix: 10hermines</figcaption>
+      <span hidden="hidden">Panoplie, 10 hermines</span>
+      <input type="button" name="panier" value="Panier">
+    </figure>
+  </div>
+  <div class="col-lg-2">
+    <figure id="plancheetpalet">
+      <img src="assets/img/decoration/plancheetpalet.jpeg" title="Planche et palet" alt="Planche et palet" height="200px" width="200px"></img>
+      <figcaption></figcaption>
+      <figcaption class="price">Prix: 10hermines</figcaption>
+      <span hidden="hidden">Planche et palet, 10 hermines</span>
+      <input type="button" name="panier" value="Panier">
+    </figure>
+  </div>
+  <div class="col-lg-2">
+    <figure id="porteclef">
+      <img src="assets/img/decoration/porteclef.jpeg" title="Porte clef" alt="Porte clef" height="200px" width="200px"></img>
+      <figcaption>Porte-clef</figcaption>
+      <figcaption class="price">Prix: 10hermines</figcaption>
+      <span hidden="hidden">Porte-clef, 10 hermines</span>
+      <input type="button" name="panier" value="Panier">
+    </figure>
+  </div>
+  <div class="col-lg-offset-1 col-lg-2">
+    <figure id="tassesbretonnes">
+      <img src="assets/img/decoration/tassesbretonnes.jpeg" title="Tasses bretonnes" alt="Tasses bretonnes" height="200px" width="200px"></img>
+      <figcaption>Tasses bretonnes</figcaption>
+      <figcaption class="price">Prix: 10hermines</figcaption>
+      <span hidden="hidden">Tasses bretonnes, 10 hermines</span>
+      <input type="button" name="panier" value="Panier">
+    </figure>
+  </div>
+  <div class="col-lg-2">
+    <figure id="tetine">
+      <img src="assets/img/decoration/tetine.jpeg" title="Tetine" alt="Tetine" height="200px" width="200px"></img>
+      <figcaption>Tetine</figcaption>
+      <figcaption class="price">Prix: 10hermines</figcaption>
+      <span hidden="hidden">Tetine, 10 hermines</span>
+      <input type="button" name="panier" value="Panier">
+    </figure>
+  </div>
+</section>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-3.2.1.js"></script>
+</body>
+</html>
