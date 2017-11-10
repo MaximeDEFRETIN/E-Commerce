@@ -71,9 +71,12 @@ figure img {
   border-right: 2px solid black;
   background-color: white;
 }
-figure input {
+figure button {
   margin-top: 5px;
   margin-left: 60px;
+}
+.imgbasket{
+  width : 100px
 }
 @media screen and (min-width: 200px) and (max-width: 390px)  {
   figure img {
