@@ -9,7 +9,6 @@
     font-weight: normal;
     font-style: normal;
 }
-<<<<<<< HEAD
 header{
   background-color: white;
   padding: 0;
@@ -22,16 +21,13 @@ header .row{
   margin: 0;
   padding:0;
 }
-=======
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
   border: 2px solid black;
   position:relative;
   height:350px;
   width: 350px;
   margin: auto;
-    }
-
->>>>>>> 8eafb3fb48de73c242a64db58ed049dd4332fb3b
+}
 body {
   background-color: #cccccc;
   background-image: url(../img/triskel.png);
@@ -75,9 +71,12 @@ figure img {
   border-right: 2px solid black;
   background-color: white;
 }
-figure input {
+figure button {
   margin-top: 5px;
   margin-left: 60px;
+}
+.imgbasket{
+  width : 100px
 }
 @media screen and (min-width: 200px) and (max-width: 390px)  {
   figure img {
@@ -131,5 +130,15 @@ figure input {
   }
 }
 
+.arrowUp{
+  color:black;
+  position:fixed;
+  right:75px;
+  bottom:75px;
+  font-size:250%;
+}
+.arrowUp:hover{
+  color:black;
+}
 
 /* Faire une mediaquery sur figure avec un width de 150px en xs */
