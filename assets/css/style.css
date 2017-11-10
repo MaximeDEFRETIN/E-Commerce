@@ -9,6 +9,14 @@
     font-weight: normal;
     font-style: normal;
 }
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  border: 2px solid black;
+  position:relative;
+  height:350px;
+  width: 350px;
+  margin: auto;
+    }
+
 body {
   background-color: #cccccc;
   background-image: url(../img/triskel.png);
@@ -18,7 +26,7 @@ body {
   background-size: 40%;
   background-position: 550px 150px;
 }
-ul li, .navbar-brand {
+ul{
   font-family: 'kingthings_callicalligraphica';
   font-size: 30px;
 }
