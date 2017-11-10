@@ -9,7 +9,6 @@
     font-weight: normal;
     font-style: normal;
 }
-<<<<<<< HEAD
 header{
   background-color: white;
   padding: 0;
@@ -22,16 +21,13 @@ header .row{
   margin: 0;
   padding:0;
 }
-=======
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
   border: 2px solid black;
   position:relative;
   height:350px;
   width: 350px;
   margin: auto;
-    }
-
->>>>>>> 8eafb3fb48de73c242a64db58ed049dd4332fb3b
+}
 body {
   background-color: #cccccc;
   background-image: url(../img/triskel.png);

@@ -17,21 +17,82 @@
   </header>
   <div class="row">
     <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">@</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li><a href="#">Nourritures</a></li>
-          <li><a href="#">Vêtements</a></li>
-          <li><a href="#">Ustensiles</a></li>
-          <li><a href="#">Musiques</a></li>
-          <li><a href="#">Livres</a></li>
-          <li><a href="#">Jeux - Décos</a></li>
-        </ul>
-      </div>
-    </nav>
+     <div class="container-fluid">
+       <div class="navbar-header">
+         <!--L'attribut data-toggle permet de déterminer si on ouvre une nouvelle fenêtre, un menu déroulant ou un onglet-->
+         <!--L'attribut data-target permet de cibler un élément, en utilsant son id, sur lequel une action est effectuée lors d'un clic-->
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" id="buttonNavbar">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="#" id="produit">Tous nos produits !</a>
+       </div>
+       <div class="collapse navbar-collapse" id="myNavbar">
+         <ul class="nav navbar-nav">
+           <li><a href="#" id="navFood">Nourritures</a></li>
+           <li><a href="#" id="navVet">Vêtements</a></li>
+           <li><a href="#" id="navUst">Ustensiles</a></li>
+           <li><a href="#" id="navMu">Musiques</a></li>
+           <li><a href="#" id="navBo">Livres</a></li>
+           <li><a href="#" id="navGame">Jeux - Décos</a></li>
+         </ul>
+       </div>
+     </div>
+   </nav>
   </div>
+  <div class="container-fluid">
+    <header>
+    </header>
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicateurs du carousel, ce qui permet de faire le slider -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="9"></li>
+      </ol>
+      <!-- Intérieur du carousel : les différentes images et les ancres pour amener à l'objet voulu -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <a href="#book_8" class="Baies"><img src="assets/img/livres/Les-baies-de-Saint-Malo-et-de-Saint-Brieuc.jpg" class="img1" alt="Baies de St-Malo et St-Brieuc" title="Baies de St-Malo et St-Brieuc"></a>
+        </div>
+        <div class="item">
+          <a href="#ustensils1"><img src="assets/img/ustensiles/billig.jpg" class="img-responsive" alt="Billig" title="Billig"></a>
+        </div>
+        <div class="item">
+          <a href="#food1"><img src="assets/img/nourriture/boitegateau.jpeg" class="img-responsive" title="Boite de gâteau" alt="Boite de gâteau"></a>
+        </div>
+        <div class="item">
+          <a href="#disc1"><img src="assets/img/musiques/CDs/Ame-de-Bretagne-Tri-Yann.jpg" class="img-responsive" title="Ame-de-Bretagne" alt="Ame de Bretagne Tri Yann"></a>
+        </div>
+        <div class="item">
+          <a href="#clothes-man-1"><img src="assets/img/vetements/homme/breton1.jpg" class="img-responsive" title="breton1" alt="Tee-shirt Noir Humoristique Breton Ecolo Pas Alcoolo"></a>
+        </div>
+        <div class="item">
+          <a href="#clothes-wife-1"></a><img src="assets/img/vetements/femme/breton1.jpg" class="img-responsive" title="breton1" alt="T-shirt Super Maman Bretonne T-shirt Femme Teezily">
+        </div>
+        <div class="item">
+          <a href="#clothes-child-1"><img src="assets/img/vetements/enfant/breton1.jpg" class="img-responsive" title="breton1" alt="Inspire par Breton Envy You're A Tourist Officieux Sweat a Capuche des Enfants"></a>
+        </div>
+        <div class="item">
+          <a href="#decoration1"><img src="assets/img/decoration/Abreton.jpeg" class="img-responsive" title="Abreton" alt="Abreton"></a>
+        </div>
+        <div class="item">
+          <a href="#accessory-1"><img src="assets/img/vetements/accessoire/bonnet.jpg" class="img-responsive" title="bonnet" alt="PATOUTATIS - Bob marin coton docker motif TRISKEL breton bretagne - mixte homme / femme"></a>
+        </div>
+        <div class="item">
+          <a href="#instrument1"><img src="assets/img/musiques/Instruments/biniou.jpg" class="img-responsive" title="biniou" alt="biniou"></a>
+        </div>
+      </div>
+    </div>
   <section id="food">
     <h2>Nourritures</h2>
     <!--Tous les éléments se trouve dans une ligne-->
@@ -823,7 +884,8 @@
         </figure>
       </div>
     </section>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery-3.2.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/js/jsNavbar.js"></script>
   </body>
   </html>
