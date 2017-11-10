@@ -127,5 +127,15 @@ figure input {
   }
 }
 
+.arrowUp{
+  color:black;
+  position:fixed;
+  right:75px;
+  bottom:75px;
+  font-size:250%;
+}
+.arrowUp:hover{
+  color:black;
+}
 
 /* Faire une mediaquery sur figure avec un width de 150px en xs */
