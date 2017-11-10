@@ -26,7 +26,7 @@ body {
   background-size: 40%;
   background-position: 550px 150px;
 }
-ul{
+ul, .navbar-brand {
   font-family: 'kingthings_callicalligraphica';
   font-size: 30px;
 }
