@@ -2,11 +2,13 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/iconfonts.css">
-  <link rel="stylesheet" href="/css/responsiveSmartPhone.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/iconfonts.css" />
+  <link rel="stylesheet" href="/css/responsiveSmartPhone.css" />
   <link rel="stylesheet" href="/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <title>Le pti Breton</title>
 </head>
 <body class="container-fluid">
@@ -16,41 +18,26 @@
     </div>
   </div>
   <div class="row">
-    <!--<nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">@</a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li><a href="#">Nourritures</a></li>
-            <li><a href="#">Vêtements</a></li>
-            <li><a href="#">Ustensiles</a></li>
-            <li><a href="#">Musiques</a></li>
-            <li><a href="#">Livres</a></li>
-            <li><a href="#">Jeux - Décos</a></li>
-          </ul>
-      </div>
-    </nav>
-  </div>-->
   <nav class="navbar navbar-inverse">
    <div class="container-fluid">
      <div class="navbar-header">
+       <!--L'attribut data-toggle permet de déterminer si on ouvre une nouvelle fenêtre, un menu déroulant ou un onglet-->
+       <!--L'attribut data-target permet de cibler un élément, en utilsant son id, sur lequel une action est effectuée lors d'un clic-->
        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" id="buttonNavbar">
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
        </button>
-       <a class="navbar-brand" href="#">@</a>
+       <a class="navbar-brand" href="#" id="produit">Tous nos produits !</a>
      </div>
      <div class="collapse navbar-collapse" id="myNavbar">
        <ul class="nav navbar-nav">
-         <li class="active"><a href="#">@</a></li>
-         <li><a href="#">Nourritures</a></li>
-         <li><a href="#">Vêtements</a></li>
-         <li><a href="#">Ustensiles</a></li>
-         <li><a href="#">Musiques</a></li>
-         <li><a href="#">Livres</a></li>
-         <li><a href="#">Jeux - Décos</a></li>
+         <li><a href="#food" id="navFood">Nourritures</a></li>
+         <li><a href="#" id="navVet">Vêtements</a></li>
+         <li><a href="#" id="navUst">Ustensiles</a></li>
+         <li><a href="#" id="navMu">Musiques</a></li>
+         <li><a href="#" id="navBo">Livres</a></li>
+         <li><a href="#" id="navGame">Jeux - Décos</a></li>
        </ul>
      </div>
    </div>
@@ -217,8 +204,8 @@
       </div>
   </section>
 <!--Section décoration et jeu-->
-<section id="food">
-  <h2>Nourritures</h2>
+<section id="decoration">
+  <h2>Jeu et décoration</h2>
   <div class="col-lg-offset-1 col-lg-2">
     <figure id="Abreton">
       <img src="assets/img/decoration/Abreton.jpeg" title="Abreton" alt="Abreton" height="200px" width="200px"></img>
@@ -267,7 +254,7 @@
   <div class="col-lg-offset-1 col-lg-2">
     <figure id="decapsuleurbreton">
       <img src="assets/img/decoration/decapsuleurbreton.jpeg" title="Décapsuleur breton" alt="Décpsuleur breton" height="200px" width="200px"></img>
-      <figcaption>Décpsuleur breton</figcaption>
+      <figcaption>Décapsuleur breton</figcaption>
       <figcaption class="price">Prix: 10hermines</figcaption>
       <span hidden="hidden">Décpsuleur breton, 10 hermines</span>
       <input type="button" name="panier" value="Panier">
@@ -374,7 +361,5 @@
   </div>
 </section>
 <script src="assets/js/jsNavbar.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery-3.2.1.js"></script>
 </body>
 </html>
