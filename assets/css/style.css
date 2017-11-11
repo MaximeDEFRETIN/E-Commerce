@@ -9,6 +9,25 @@
     font-weight: normal;
     font-style: normal;
 }
+header{
+  background-color: white;
+  padding: 0;
+}
+header.container-fluid{
+  padding: 0;
+  margin: 0;
+}
+header .row{
+  margin: 0;
+  padding:0;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  border: 2px solid black;
+  position:relative;
+  height:350px;
+  width: 350px;
+  margin: auto;
+}
 body {
   background-color: #cccccc;
   background-image: url(../img/triskel.png);
@@ -18,7 +37,7 @@ body {
   background-size: 40%;
   background-position: 550px 150px;
 }
-ul li, .navbar-brand {
+ul{
   font-family: 'kingthings_callicalligraphica';
   font-size: 30px;
 }
@@ -29,12 +48,10 @@ h2 {
   margin-left: 15px;
 }
 figure {
-  margin-bottom: 100px;
-  height: 250px;
+  height: 400px;
+  width: 200px
 }
 figure img {
-  margin-left: 16%;
-  height: 200px;
   width: 200px;
   border-top: 3px solid black;
   border-left: 3px solid black;
@@ -54,8 +71,74 @@ figure img {
   border-right: 2px solid black;
   background-color: white;
 }
-figure input {
+figure button {
   margin-top: 5px;
   margin-left: 60px;
 }
+.imgbasket{
+  width : 100px
+}
+@media screen and (min-width: 200px) and (max-width: 390px)  {
+  figure img {
+      width: 120px;
+      height: 120px;
+  }
+  figure{
+    width: 120px;
+    height: 320px;
+  }
+  body{
+    background-position: 100px 150px;
+  }
+  figure input{
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 391px) and (max-width: 499px)  {
+  figure img {
+      width: 150px;
+      height: 150px;
+  }
+  figure{
+    width: 150px;
+    height: 320px;
+  }
+  body{
+    background-position: 150px 150px;
+  }
+  section{
+    margin-left: 30px;
+  }
+  figure input{
+    margin-left: 40px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767px)  {
+  figure img {
+      width: 150px;
+      height: 150px;
+  }
+  figure{
+    width: 150px;
+    height: 320px;
+  }
+  body{
+    background-position: 200px 150px;
+  }
+  section{
+    margin-left: 85px;
+  }
+}
+
+.arrowUp{
+  color:black;
+  position:fixed;
+  right:75px;
+  bottom:75px;
+  font-size:250%;
+}
+.arrowUp:hover{
+  color:black;
+}
+
 /* Faire une mediaquery sur figure avec un width de 150px en xs */
