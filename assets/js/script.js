@@ -15,6 +15,10 @@ $(function(){
       var pricetotal = price;
       if($('#tr'+id+'').length > 0 ){
         alert('L\'article a déjà étè selectionner.')
+        var value = $('#tabl'+id+' > input').val();
+        value++;
+        // Ajouter la value dans l'input
+        $('#tabl'+id+' > input').val(value);
       }else {
       $("tbody").append( "<tr id='tr"+id+"'>" +"<td><img src=\""+ img +"\" class=\"imgbasket\"/></td>" +"<td id='price"+id+"'>"+price+"</td>" +"<td id='tabl"+id+"'><button class='plus'>+</button><input value='1' disabled/><button class='supp'>-</button></td>"+"<td id='priceTotal"+id+"'><p>"+pricetotal+"</p></td>"+"<td id='supp"+id+"'><a><i class=\"icofont icofont-delete-alt\"></i></a></td>"+"</tr>" );
       alert('Ajout au panier.');
@@ -23,10 +27,8 @@ $(function(){
       $('#tabl'+id+' > .plus').click(function() {
         // Récuperer la value de l'input de l'article
         var value = $('#tabl'+id+' > input').val();
-        console.log(value++);
         // Prend la value et on fait +1
-        // value = parseInt(value) + 1;
-          // console.log(value);
+        value++;
         // Ajouter la value dans l'input
         $('#tabl'+id+' > input').val(value);
         var valeur = $('#price'+id+'').text();
