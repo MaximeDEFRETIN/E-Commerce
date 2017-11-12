@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/iconfonts.css">
+  <link rel="stylesheet" href="assets/css/icofont.css">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Le pti Breton</title>
@@ -255,10 +255,12 @@ img {
           <table id='blabla' style="width:100%">
           <tr>
             <th>Produit</th>
-            <th>Prix</th>
+            <th>Prix / unité</th>
             <th>Quantité</th>
+            <th>Prix total</th>
           </tr>
           </table>
+          <p></p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -279,27 +281,57 @@ img {
     <script>
     $(function(){
       var click = 0;
+      // Quand on clique sur le panier d'un article
        $("figure > input").on("click",function(id){
+         // Recuperer id du parent de input
          var id=$(this).parent("figure").attr("id");;;
+         // recuperer src de article actuelle
           var img =$('#'+id+' > img').attr('src');
+          // recuperer le price
           var price=$('#'+id+' .price').text();
+          // split de price pou récuperer la partie nombre
           price = price.split(" ");
+          // Ajout la partie nombre dans la variable price
           price = price[1];
+          var pricetotal = price;
+          if($('#tr'+id+'').length > 0 ){
+            alert('L\'article a déjà étè selectionner.')
+          }else {
+          $("tbody").append( "<tr id='tr"+id+"'>" +"<td><img src=\""+ img +"\" class=\"imgbasket\"/></td>" +"<td id='price"+id+"'>"+price+"</td>" +"<td id='tabl"+id+"'><button id='plus'>+</button><input value='1' disabled/><button id='supp'>-</button></td>"+"<td id='priceTotal"+id+"'><p>"+pricetotal+"</p></td>"+"<td id='supp"+id+"'><a><i class=\"icofont icofont-delete-alt\"></i></a></td>"+"</tr>" );
           alert('Ajout au panier.');
-          $("tbody").append( "<tr id='tr"+id+"'>" +"<td><img src=\""+ img +"\" class=\"imgbasket\"/></td>" +"<td>"+price+"</td>" +"<td id='tabl"+id+"'><button id='plus'>Ajouter +1 </button><input value='1'/><button id='supp'>-1 </button></td>" +"</tr>" );
+          };
+          // Augmenter la quantité d'un article
           $('#tabl'+id+' > #plus').click(function() {
+            // Récuperer la value de l'input de l'article
             var value = $('#tabl'+id+' > input').val();
-            value++;
+            console.log(value++);
+            // Prend la value et on fait +1
+            // value = parseInt(value) + 1;
+              // console.log(value);
+            // Ajouter la value dans l'input
             $('#tabl'+id+' > input').val(value);
+            var valeur = $('#price'+id+'').text();
+            valeur = parseInt(valeur);
+            pricetotal = valeur * value;
+            $('#priceTotal'+id+'> p').text(pricetotal);
         });
+        // Baisse la quantité d'une article
         $('#tabl'+id+' > #supp').click(function() {
+          // Récuperer la value de l'input de l'article
           var value = $('#tabl'+id+' > input').val();
+          // Prend la value et on fait -1
           value--;
+          // Ajouter la value dans l'input
           $('#tabl'+id+' > input').val(value);
+          pricetotal = pricetotal - price;
+          $('#priceTotal'+id+'> p').text(pricetotal);
+          // Si value de l'input = 0 alors on supprime la ligne du tableau
           if(value == 0){
             $('#tr'+id+'').remove();
           }
-
+        });
+        $('#supp'+id+' > a').click(function(){
+          $('#tr'+id+'').remove();
         });
       });
 
