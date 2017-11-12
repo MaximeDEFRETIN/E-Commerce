@@ -14,21 +14,20 @@ img {
     display: inline-block;
     overflow: hidden;
     margin: 0;
-    width: 250px;
     height: 250px;
+    width: 200px;
 }
 .descr{
     position: absolute;
     top: 0;
     right: 100;
     left: 10;
-    height: 250px;
+    height: 200px;
     width: 200px;
     padding: .5em;
     background: #000;
     background: rgba(0, 0, 0, .60);
     color: #fff;
-    text-overflow: ellipsis;
 }
 header{
   background-color: white;
@@ -71,13 +70,8 @@ h2{
   color: black ;
 }
 figure {
-<<<<<<< HEAD
-  height: 400px;
-  width: 200px;
-=======
   height: 350px;
   width: 200px
->>>>>>> 5d5581244c5d0eccaab6805030e6f8831921aabf
 }
 figure img {
   width: 200px;
@@ -143,18 +137,6 @@ h1{
   }
 }
 @media screen and (min-width: 200px) and (max-width: 390px)  {
-  .descr{
-      position: absolute;
-      top: 0;
-      right: 100;
-      left: 10;
-      height: 120px;
-      width: 120px;
-      padding: .5em;
-      background: #000;
-      background: rgba(0, 0, 0, .60);
-      color: #fff;
-  }
   figure img {
       width: 120px;
       height: 120px;
@@ -178,22 +160,8 @@ h1{
   }
 }
 @media screen and (min-width: 391px) and (max-width: 499px)  {
-<<<<<<< HEAD
-  .descr{
-      position: absolute;
-      top: 0;
-      right: 100;
-      left: 10;
-      height: 150px;
-      width: 150px;
-      padding: .5em;
-      background: #000;
-      background: rgba(0, 0, 0, .60);
-      color: #fff;
-=======
   .hermine{
     width: 130px;
->>>>>>> 5d5581244c5d0eccaab6805030e6f8831921aabf
   }
   figure img {
       width: 150px;
@@ -218,18 +186,6 @@ h1{
   }
 }
 @media screen and (min-width: 500px) and (max-width: 767px)  {
-  .descr{
-      position: absolute;
-      top: 0;
-      right: 100;
-      left: 10;
-      height: 150px;
-      width: 150px;
-      padding: .5em;
-      background: #000;
-      background: rgba(0, 0, 0, .60);
-      color: #fff;
-  }
   figure img {
       width: 150px;
       height: 150px;
@@ -298,7 +254,3 @@ h1{
     margin-left:  15px;
   }
 }
-
-
-
-/* Faire une mediaquery sur figure avec un width de 150px en xs */
