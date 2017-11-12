@@ -9,6 +9,27 @@
     font-weight: normal;
     font-style: normal;
 }
+img {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+    width: 250px;
+    height: 250px;
+}
+.descr{
+    position: absolute;
+    top: 0;
+    right: 100;
+    left: 10;
+    height: 250px;
+    width: 200px;
+    padding: .5em;
+    background: #000;
+    background: rgba(0, 0, 0, .60);
+    color: #fff;
+    text-overflow: ellipsis;
+}
 header{
   background-color: white;
   padding: 0;
@@ -49,7 +70,7 @@ h2 {
 }
 figure {
   height: 400px;
-  width: 200px
+  width: 200px;
 }
 figure img {
   width: 200px;
@@ -79,6 +100,18 @@ figure button {
   width : 100px
 }
 @media screen and (min-width: 200px) and (max-width: 390px)  {
+  .descr{
+      position: absolute;
+      top: 0;
+      right: 100;
+      left: 10;
+      height: 120px;
+      width: 120px;
+      padding: .5em;
+      background: #000;
+      background: rgba(0, 0, 0, .60);
+      color: #fff;
+  }
   figure img {
       width: 120px;
       height: 120px;
@@ -95,6 +128,18 @@ figure button {
   }
 }
 @media screen and (min-width: 391px) and (max-width: 499px)  {
+  .descr{
+      position: absolute;
+      top: 0;
+      right: 100;
+      left: 10;
+      height: 150px;
+      width: 150px;
+      padding: .5em;
+      background: #000;
+      background: rgba(0, 0, 0, .60);
+      color: #fff;
+  }
   figure img {
       width: 150px;
       height: 150px;
@@ -114,6 +159,18 @@ figure button {
   }
 }
 @media screen and (min-width: 500px) and (max-width: 767px)  {
+  .descr{
+      position: absolute;
+      top: 0;
+      right: 100;
+      left: 10;
+      height: 150px;
+      width: 150px;
+      padding: .5em;
+      background: #000;
+      background: rgba(0, 0, 0, .60);
+      color: #fff;
+  }
   figure img {
       width: 150px;
       height: 150px;
