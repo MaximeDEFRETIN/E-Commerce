@@ -17,6 +17,9 @@ img {
     height: 250px;
     width: 200px;
 }
+.hermine{
+  height: 150px;
+}
 .descr{
     position: absolute;
     top: 0;
@@ -105,12 +108,16 @@ figure button {
 .arrowUp{
   color:black;
   position:fixed;
-  right:75px;
-  bottom:75px;
+  right:5px;
+  bottom:10px;
   font-size:250%;
+  background-color: white;
+  opacity: 0.7;
 }
 .arrowUp:hover{
   color:black;
+  opacity: 1;
+  text-decoration: none;
 }
 .descr{
     position: absolute;
@@ -181,6 +188,7 @@ h1{
   }
   .hermine{
     width: 130px;
+    margin-left: 20px;
   }
 }
 @media screen and (min-width: 391px) and (max-width: 499px)  {
