@@ -83,7 +83,7 @@ $('.myBtn').on("click",function () {
     }
   });
 });
-  $("#myBtn").click(function(){
+  $(".myBtn").click(function(){
     $("#myModal").modal();
   });
   $('figure').hover(function(){
