@@ -57,7 +57,7 @@ $('#myBtn').on("click",function () {
     $('#priceTotal'+id+'> p').text(pricetotal);
     valeurtotal = $('#blabla').find('#test').text();
     valeurtotal = parseFloat(valeurtotal) + valeur;
-    $('#blabla').find('#test').text(valeurtotal+' He');
+    $('#blabla').find('#test').text(valeurtotal +' He');
 
   });
   // Baisse la quantité d'une article
