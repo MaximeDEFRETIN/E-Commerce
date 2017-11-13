@@ -13,33 +13,32 @@ $(function(){
       // Ajout la partie nombre dans la variable price
       price = price[2];
       var ref =$('#'+id+'> img').attr('ref');
-      var pricetotal = price;
+      var pricetotal = price * value;
       $('#blabla').find('#test').text(valeurtotal);
       if($('#tr'+id+'').length > 0 ){
         alert('L\'article est déjà dans le panier.');
         var value = $('#tabl'+id+' > input').val();
         value++;
         $('#tabl'+id+' > input').val(value);
-        var priceactuel = price * value;
-        valeurtotal = valeurtotal + parseInt(priceactuel);
+        pricetotal = price * value;
+        $('#priceTotal'+id+'> p').text(pricetotal);
+        valeurtotal = valeurtotal + parseInt(price);
         $('#blabla').find('#test').text(valeurtotal);
       }else {
         $("tbody").append( "<tr id='tr"+id+"'>" +"<td><img src=\""+ img +"\" class=\"imgbasket\"/></td>"+"<td>"+ref+"</td>"+"<td id='price"+id+"'>"+price+"</td>" +"<td id='tabl"+id+"'><button class='plus'>+</button><input class='price' value='1' disabled/><button class='supp'>-</button></td>"+"<td id='priceTotal"+id+"'><p>"+pricetotal+"</p></td>"+"<td id='supp"+id+"'><a><i class=\"icofont icofont-delete-alt\"></i></a></td>"+"</tr>" );
         alert('L\'article a étè ajouter au panier.');
+        var value = $('#tabl'+id+' > input').val();
+        pricetotal = value * price;
+        $('#priceTotal'+id+'> p').text(pricetotal);
         valeurtotal = $('#blabla').find('#test').text();
-        console.log('La valeur 1 temps est '+ valeurtotal);
         valeurtotal = parseFloat(valeurtotal) + parseInt(price);
-        console.log('Le prix est '+valeurtotal);
         $('#blabla').find('#test').text(valeurtotal);
-
       };
-
-
     $('#supp'+id+' > a').click(function(){
       $('#tr'+id+'').remove();
     });
   });
-$('#myBtn').click(function () {
+$('.myBtn').on("click",function () {
   // Augmenter la quantité d'un article
   $('.plus').click(function() {
     // Récuperer la value de l'input de l'article
