@@ -23,16 +23,16 @@ $(function(){
         pricetotal = price * value;
         $('#priceTotal'+id+'> p').text(pricetotal);
         valeurtotal = valeurtotal + parseInt(price);
-        $('#blabla').find('#test').text(valeurtotal);
+        $('#blabla').find('#test').text(valeurtotal +' He');
       }else {
-        $("tbody").append( "<tr id='tr"+id+"'>" +"<td><img src=\""+ img +"\" class=\"imgbasket\"/></td>"+"<td>"+ref+"</td>"+"<td id='price"+id+"'>"+price+"</td>" +"<td id='tabl"+id+"'><button class='plus'>+</button><input class='price' value='1' disabled/><button class='supp'>-</button></td>"+"<td id='priceTotal"+id+"'><p>"+pricetotal+"</p></td>"+"<td id='supp"+id+"'><a><i class=\"icofont icofont-delete-alt\"></i></a></td>"+"</tr>" );
+        $("tbody").append( "<tr id='tr"+id+"'>" +"<td><img src=\""+ img +"\" class=\"imgbasket\"/></td>"+"<td>"+ref+"</td>"+"<td id='price"+id+"'>"+price+" He</td>" +"<td id='tabl"+id+"'><button class='plus'>+</button><input class='price' value='1' disabled/><button class='supp'>-</button></td>"+"<td id='priceTotal"+id+"'><p>"+pricetotal+"</p></td>"+"<td id='supp"+id+"'><a><i class=\"icofont icofont-delete-alt\"></i></a></td>"+"</tr>" );
         alert('L\'article a étè ajouter au panier.');
         var value = $('#tabl'+id+' > input').val();
         pricetotal = value * price;
         $('#priceTotal'+id+'> p').text(pricetotal);
         valeurtotal = $('#blabla').find('#test').text();
         valeurtotal = parseFloat(valeurtotal) + parseInt(price);
-        $('#blabla').find('#test').text(valeurtotal);
+        $('#blabla').find('#test').text(valeurtotal +' He');
       };
     $('#supp'+id+' > a').click(function(){
       $('#tr'+id+'').remove();
@@ -57,7 +57,7 @@ $('#myBtn').on("click",function () {
     $('#priceTotal'+id+'> p').text(pricetotal);
     valeurtotal = $('#blabla').find('#test').text();
     valeurtotal = parseFloat(valeurtotal) + valeur;
-    $('#blabla').find('#test').text(valeurtotal);
+    $('#blabla').find('#test').text(valeurtotal+' He');
 
   });
   // Baisse la quantité d'une article
@@ -76,7 +76,7 @@ $('#myBtn').on("click",function () {
     $('#priceTotal'+id+'> p').text(pricetotal);
     valeurtotal = $('#blabla').find('#test').text();
     valeurtotal = parseFloat(valeurtotal) - price ;
-    $('#blabla').find('#test').text(valeurtotal);
+    $('#blabla').find('#test').text(valeurtotal +' He');
     // Si value de l'input = 0 alors on supprime la ligne du tableau
     if(value == 0){
       $('#tr'+id+'').remove();
