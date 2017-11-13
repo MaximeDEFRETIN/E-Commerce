@@ -90,7 +90,7 @@ figure img {
   border-right: 2px solid black;
   background-color: white;
 }
-.price {
+figcaption.price {
   text-decoration: overline;
   font-weight: bold;
   border-bottom: 2px solid black;
@@ -138,6 +138,9 @@ figure button {
 h1{
   margin-top: 50px;
 }
+input.price{
+  width: 40px;
+}
 @media screen and (min-width: 200px) and (max-width: 475px)  {
   .descr{
       position: absolute;
@@ -153,6 +156,17 @@ h1{
   }
   h1{
     margin-top: 30px;
+  }
+  .imgbasket{
+    width : 50px;
+    height: 50px;
+  }
+  input.price{
+    width : 25px;
+    height: 50px;
+  }
+  .modal-dialog{
+    width: 100%;
   }
 }
 @media screen and (min-width: 200px) and (max-width: 390px)  {
@@ -228,6 +242,9 @@ h1{
     height:150px;
     width: 150px;
   }
+  input.price{
+    width : 25px;
+  }
 }
 @media screen and (min-width: 500px) and (max-width: 767px)  {
   .descr{
@@ -260,13 +277,16 @@ h1{
     height:150px;
     width: 150px;
   }
+  input.price{
+    width : 25px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 899px)  {
   .descr{
       position: absolute;
       top: 0;
-      right: 100;
-      left: 10;
+      right: 100px;
+      left: 10px;
       height: 150px;
       width: 150px;
       padding: .5em;
@@ -281,7 +301,7 @@ h1{
     background-position: 250px 150px;
   }
   ul, #produit{
-    font-size: 19px;
+    font-size: 18px;
   }
   figure img {
       width: 150px;
