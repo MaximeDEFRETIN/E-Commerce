@@ -24,6 +24,7 @@
           <div class="navbar-header">
             <!--L'attribut data-toggle permet de déterminer si on ouvre une nouvelle fenêtre, un menu déroulant ou un onglet-->
             <!--L'attribut data-target permet de cibler un élément, en utilsant son id, sur lequel une action est effectuée lors d'un clic-->
+            <button type="button" class="btn btn-secondary btn-lg visible-xs" id="myBtn"><i class="icofont icofont-basket"> Mon panier</i></button>
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" id="buttonNavbar">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -41,15 +42,14 @@
               <li><a href="#" id="navGame">Jeux - Décos</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><button type="button" class="btn btn-secondary btn-lg " id="myBtn"><i class="icofont icofont-basket"></i></button></li>
+              <li><button type="button" class="btn btn-secondary btn-lg hidden-xs" id="myBtn"><i class="icofont icofont-basket"></i></button></li>
             </ul>
           </div>
         </div>
       </nav>
     </div>
     <div class="container-fluid">
-      <header>
-      </header>
+      <h2>Top produits du moment</h2>
 
       <div id="carousel" class="carousel slide" data-ride="carousel">
         <!-- Indicateurs du carousel, ce qui permet de faire le slider -->
@@ -106,7 +106,7 @@
           <!--On met 5 images par ligne-->
           <div class="col-lg-offset-1 col-lg-2 col-md-offset-0 col-md-3 col-sm-offset-0 col-sm-4 col-xs-offset-0 col-xs-6">
             <figure id="food_1">
-              <img src="assets/img/nourriture/boitegateau.jpeg" ref="00000" title="Boite de gâteau" alt="Boite de gâteau"/>
+              <img src="assets/img/nourriture/boitegateau.jpeg" ref="00" title="Boite de gâteau" alt="Boite de gâteau"/>
               <figcaption class="titre">Boite de gâteaux</figcaption>
               <figcaption class="price">Prix : 10 hermines</figcaption>
               <!--Avec l'attribut hidden, on cache les éléments span-->
@@ -116,7 +116,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="food_2">
-              <img src="assets/img/nourriture/crepecaramelbeurresalé.jpeg" ref="00001" title="Crêpe au caramel au beurre salé" alt="Crêpe au caramel au beurre salé"/>
+              <img src="assets/img/nourriture/crepecaramelbeurresalé.jpeg" ref="01" title="Crêpe au caramel au beurre salé" alt="Crêpe au caramel au beurre salé"/>
               <figcaption class="titre">Crêpes au caramel au beurre salé</figcaption>
               <figcaption class="price">Prix : 10 hermines</figcaption>
               <span hidden="hidden" class="descr">Crêpes au caramel au beurre salé, 10hermines</span>
@@ -125,7 +125,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="food_3">
-              <img src="assets/img/nourriture/crepechocolat.jpeg" ref="00002" title="Crêpe au chocolat" alt="Crêpe au chocolat"/>
+              <img src="assets/img/nourriture/crepechocolat.jpeg" ref="02" title="Crêpe au chocolat" alt="Crêpe au chocolat"/>
               <figcaption class="titre">Crêpes au chocolat</figcaption>
               <figcaption class="price">Prix : 10 hermines</figcaption>
               <span hidden="hidden" class="descr">Crêpes au chocolat, 10hermines</span>
@@ -134,7 +134,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="food_4">
-              <img src="assets/img/nourriture/crepepaysanbreton.jpeg" ref="00003" title="Crêpe paysan breton" alt="Crêpe paysan breton"/>
+              <img src="assets/img/nourriture/crepepaysanbreton.jpeg" ref="03" title="Crêpe paysan breton" alt="Crêpe paysan breton"/>
               <figcaption class="titre">Crêpes paysan breton</figcaption>
               <figcaption class="price">Prix : 10 hermines</figcaption>
               <span hidden="hidden" class="descr">Crêpes paysan breton, 10 hermines</span>
@@ -143,7 +143,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="food_5">
-              <img src="assets/img/nourriture/galette.jpeg" ref="00004" title="Galettes" alt="Galettes"/>
+              <img src="assets/img/nourriture/galette.jpeg" ref="04" title="Galettes" alt="Galettes"/>
               <figcaption class="titre">Galettes</figcaption>
               <figcaption class="price">Prix : 10 hermines</figcaption>
               <span hidden="hidden" class="descr">Galettes, 10 hermines</span>
@@ -152,7 +152,7 @@
           </div>
           <div class="col-lg-offset-1 col-lg-2 col-md-offset-0 col-md-3 col-sm-offset-0 col-sm-4 col-xs-offset-0 col-xs-6">
             <figure id="food_6">
-              <img src="assets/img/nourriture/galettelardons.jpg" ref="00005" title="Galettes au blé noir" alt="Galettes au blé noir"/>
+              <img src="assets/img/nourriture/galettelardons.jpg" ref="05" title="Galettes au blé noir" alt="Galettes au blé noir"/>
               <figcaption class="titre">Galettes lardons champignons</figcaption>
               <figcaption class="price">Prix : 10 hermines</figcaption>
               <span hidden="hidden" class="descr">Galettes au blé noir, 10 hermines</span>
@@ -161,7 +161,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="food_7">
-              <img src="assets/img/nourriture/galettesaucisse.jpeg" ref="00006" title="Galette-saucisses" alt="Galette-saucisses"/>
+              <img src="assets/img/nourriture/galettesaucisse.jpeg" ref="06" title="Galette-saucisses" alt="Galette-saucisses"/>
               <figcaption class="titre">Galettes-saucisses</figcaption>
               <figcaption class="price">Prix : 10 hermines</figcaption>
               <span hidden="hidden" class="descr">Galettes-saucisses, 10 hermines</span>
@@ -170,7 +170,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="food_8">
-              <img src="assets/img/nourriture/kouignamann1.jpeg" ref="00007" title="Kouignamann" alt="Kouignamann"/>
+              <img src="assets/img/nourriture/kouignamann1.jpeg" ref="07" title="Kouignamann" alt="Kouignamann"/>
               <figcaption class="titre">Kouignamann</figcaption>
               <figcaption class="price">Prix : 10 hermines</figcaption>
               <span hidden="hidden" class="descr">Kouignamann, 10 hermines</span>
@@ -179,7 +179,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="food_9">
-              <img src="assets/img/nourriture/kouignamann3.jpeg" ref="00008" title="Kouignamann Bio" alt="Kouignamann Bio"/>
+              <img src="assets/img/nourriture/kouignamann3.jpeg" ref="08" title="Kouignamann Bio" alt="Kouignamann Bio"/>
               <figcaption class="titre">Kouignamann Bio</figcaption>
               <figcaption class="price">Prix : 10 hermines</figcaption>
               <span hidden="hidden" class="descr">Kouignamann, 10 hermines</span>
@@ -188,7 +188,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="food_10">
-              <img src="assets/img/nourriture/kouignamann.jpeg" ref="00009" title="Kouignamann leclerc" alt="Kouignamann"/>
+              <img src="assets/img/nourriture/kouignamann.jpeg" ref="09" title="Kouignamann leclerc" alt="Kouignamann"/>
               <figcaption class="titre">Kouignamann Leclerc</figcaption>
               <figcaption class="price">Prix : 10 hermines</figcaption>
               <span hidden="hidden" class="descr">Kouignamann, 10 hermines</span>
@@ -197,7 +197,7 @@
           </div>
           <div class="col-lg-offset-1 col-lg-2 col-md-offset-0 col-md-3 col-sm-offset-0 col-sm-4 col-xs-offset-0 col-xs-6">
             <figure id="food_11">
-              <img src="assets/img/nourriture/paletbretonboite.jpeg" ref="00010" title="Boite de palet breton" alt="Boite de palet breton"/>
+              <img src="assets/img/nourriture/paletbretonboite.jpeg" ref="10" title="Boite de palet breton" alt="Boite de palet breton"/>
               <figcaption class="titre">Boite de palets bretons</figcaption>
               <figcaption class="price">Prix : 10 hermines</figcaption>
               <span hidden="hidden" class="descr">Boite de palets bretons, 10 hermines</span>
@@ -206,7 +206,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="food_12">
-              <img src="assets/img/nourriture/paletbreton.jpeg" ref="00011" title="Palet breton" alt="Palet breton"/>
+              <img src="assets/img/nourriture/paletbreton.jpeg" ref="11" title="Palet breton" alt="Palet breton"/>
               <figcaption class="titre">Palets bretons</figcaption>
               <figcaption class="price">Prix : 10 hermines</figcaption>
               <span hidden="hidden" class="descr">Palets bretons, 10 hermines</span>
@@ -215,7 +215,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="food_13">
-              <img src="assets/img/nourriture/quatrequartmadelaine.jpeg" ref="00012" title="Le petit quatre-quarts" alt="Le petit quatre-quarts"/>
+              <img src="assets/img/nourriture/quatrequartmadelaine.jpeg" ref="12" title="Le petit quatre-quarts" alt="Le petit quatre-quarts"/>
               <figcaption class="titre">Le petit quatre-quarts</figcaption>
               <figcaption class="price">Prix : 10 hermines</figcaption>
               <span hidden="hidden" class="descr">Le petit quatre-quarts, 10 hermines</span>
@@ -224,7 +224,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="food_14">
-              <img src="assets/img/nourriture/patecampagne.jpeg" ref="00013" title="Paté de campagne" alt="Paté de campagne"/>
+              <img src="assets/img/nourriture/patecampagne.jpeg" ref="13" title="Paté de campagne" alt="Paté de campagne"/>
               <figcaption class="titre">Paté de campagne</figcaption>
               <figcaption class="price">Prix : 10 hermines</figcaption>
               <span hidden="hidden" class="descr">Paté de campagne, 10 hermines</span>
@@ -233,7 +233,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="food_15">
-              <img src="assets/img/nourriture/patehenaff.jpeg" ref="00014" title="Paté Hénaff" alt="Paté Hénaff"/>
+              <img src="assets/img/nourriture/patehenaff.jpeg" ref="14" title="Paté Hénaff" alt="Paté Hénaff"/>
               <figcaption class="titre">Paté Hénaff</figcaption>
               <figcaption class="price">Prix : 10 hermines</figcaption>
               <span hidden="hidden" class="descr">Paté Hénaff, 10 hermines</span>
@@ -242,7 +242,7 @@
           </div>
           <div class="col-lg-offset-1 col-lg-2 col-md-offset-0 col-md-3 col-sm-offset-0 col-sm-4 col-xs-offset-0 col-xs-6">
             <figure id="food_16">
-              <img src="assets/img/nourriture/quatrequartchocolat.jpeg" ref="00015" title="Quatre-quarts au chocolat" alt="Quatre-quarts au chocolat"/>
+              <img src="assets/img/nourriture/quatrequartchocolat.jpeg" ref="15" title="Quatre-quarts au chocolat" alt="Quatre-quarts au chocolat"/>
               <figcaption class="titre">Quatre-quarts au chocolat</figcaption>
               <figcaption class="price">Prix : 10 hermines</figcaption>
               <span hidden="hidden" class="descr">Quatre-quarts au chocolat, 10 hermines</span>
@@ -251,7 +251,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="food_17">
-              <img src="assets/img/nourriture/quatrequart.jpeg" ref="00016" title="Quatre-quarts" alt="Quatre-quarts"/>
+              <img src="assets/img/nourriture/quatrequart.jpeg" ref="16" title="Quatre-quarts" alt="Quatre-quarts"/>
               <figcaption class="titre">Quatre-quarts</figcaption>
               <figcaption class="price">Prix : 10 hermines</figcaption>
               <span hidden="hidden" class="descr">Quatre-quarts, 10 hermines</span>
@@ -267,7 +267,7 @@
           <div class="row">
             <div class="col-lg-offset-1 col-lg-2 col-md-offset-0 col-md-3 col-sm-offset-0 col-sm-4 col-xs-offset-0 col-xs-6">
               <figure id='clothesman_1'>
-                <img src="assets/img/vetements/homme/breton1.jpg" title="breton1" ref="00017" alt="Tee-shirt Noir Humoristique Breton Ecolo Pas Alcoolo" height="300px" width="300px"/>
+                <img src="assets/img/vetements/homme/breton1.jpg" title="breton1" ref="17" alt="Tee-shirt Noir Humoristique Breton Ecolo Pas Alcoolo" height="300px" width="300px"/>
                 <figcaption class="titre">Tee-shirt Noir Humoristique Breton Ecolo Pas Alcoolo </figcaption>
                 <figcaption class="price">Prix : 14 hermines</figcaption>
                 <span hidden="hidden" class="descr" class="descr">Tee-shirt Noir portant l'inscription "En Bretagne on n'est pas Alcoolo, on est écolo, on boit de l'alcool pour économiser de l'eau" </span>
@@ -276,7 +276,7 @@
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
               <figure id='clothesman_2'>
-                <img src="assets/img/vetements/homme/breton2.jpg" title="breton2" ref="00018" alt="T-shirt Parfait Breton T-shirt Homme Teezily" height="300px" width="300px"/>
+                <img src="assets/img/vetements/homme/breton2.jpg" title="breton2" ref="18" alt="T-shirt Parfait Breton T-shirt Homme Teezily" height="300px" width="300px"/>
                 <figcaption class="titre">T-shirt Parfait - Breton T-shirt Homme Teezily</figcaption>
                 <figcaption class="price">Prix : 19 hermines</figcaption>
                 <span hidden="hidden" class="descr" class='descr'>T-shirt Homme Teezily T-shirt Parfait - Breton. Imposez votre style et optez pour les produits personnalisés TEEZILY. Spécialiste de l'impression à la demande, nous proposons des designs funs et tendances ! N'hésitez plus et venez découvrir nos références disponibles dans de nombreuses couleurs. </span>
@@ -285,7 +285,7 @@
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
               <figure id='clothesman_3'>
-                <img src="assets/img/vetements/homme/breton5.jpg" title="breton3" ref="00019" alt="Armor Lux - tee-shirt " height="300px" width="300px"/>
+                <img src="assets/img/vetements/homme/breton5.jpg" title="breton3" ref="19" alt="Armor Lux - tee-shirt " height="300px" width="300px"/>
                 <figcaption class="titre">Armor Lux - tee-shirt  </figcaption>
                 <figcaption class="price">Prix : 40 hermines</figcaption>
                 <span hidden="hidden" class="descr" class='descr'>Cette marinière Armor Lux loctudy rayée est un modèle emblèmatique de la célèbre marque bretonne. La marinière a cette coupe typique qui donne à son porteur un look de marin très en vogue ! Modernisez la avec un jean pour un look citadin très tendance.</span>
@@ -294,7 +294,7 @@
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
               <figure id='clothesman_4'>
-                <img src="assets/img/vetements/homme/breton4.jpg" title="breton4" ref="00020" alt="Tee-Shirt Blanc Drapeau Breton Vague Breizh" height="300px" width="300px"/>
+                <img src="assets/img/vetements/homme/breton4.jpg" title="breton4" ref="20" alt="Tee-Shirt Blanc Drapeau Breton Vague Breizh" height="300px" width="300px"/>
                 <figcaption class="titre">Tee-Shirt Blanc Drapeau Breton Vague Breizh </figcaption>
                 <figcaption class="price">Prix : 14 hermines</figcaption>
                 <span hidden="hidden" class="descr" class='descr'>Tee-shirt blanc avec Drapeau Breton formant une vague de Breizh 100% Coton </span>
@@ -303,7 +303,7 @@
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
               <figure id='clothesman_5'>
-                <img src="assets/img/vetements/homme/hchaussette.jpg" title="breton5" ref="00021" alt="Gant Premium Rayure Bretonne En Coton Doux Chaussettes Hommes, Bleu/marine" height="300px" width="300px"/>
+                <img src="assets/img/vetements/homme/hchaussette.jpg" title="breton5" ref="21" alt="Gant Premium Rayure Bretonne En Coton Doux Chaussettes Hommes, Bleu/marine" height="300px" width="300px"/>
                 <figcaption class="titre">Chaussettes rayées masculines de Gant</figcaption>
                 <figcaption class="price">Prix : 14 hermines</figcaption>
                 <span hidden="hidden" class="descr" class='descr'>Ces chaussettes hommes arborent un design de Breton Stripe "BOLD" en bleues et bleues marine, avec poignées de cheville côtelée et contraste Gant image de marque. Contrasté talon, cheville et les orteils. Tissu plus beau coton peigné et une exécution parfaite fournissent une usure distinctive pour le confort.</span>
@@ -317,7 +317,7 @@
           <div class="row">
             <div class="col-lg-offset-1 col-lg-2 col-md-offset-0 col-md-3 col-sm-offset-0 col-sm-4 col-xs-offset-0 col-xs-6">
               <figure id='clotheswife_1'>
-                <img src="assets/img/vetements/femme/breton1.jpg" title="breton1" ref="00022" alt="T-shirt Super Maman Bretonne T-shirt Femme Teezily" height="300px" width="300px"/>
+                <img src="assets/img/vetements/femme/breton1.jpg" title="breton1" ref="22" alt="T-shirt Super Maman Bretonne T-shirt Femme Teezily" height="300px" width="300px"/>
                 <figcaption class="titre">T-shirt Super Maman Bretonne T-shirt Femme Teezily</figcaption>
                 <figcaption class="price">Prix : 19 hermines</figcaption>
                 <span hidden="hidden" class="descr" class='descr'>T-shirt Femme Teezily T-shirt Super Maman Bretonne. Imposez votre style et optez pour les produits personnalisés TEEZILY. Spécialiste de l'impression à la demande, nous proposons des designs fun et tendance ! N'hésitez plus et venez découvrir nos références disponibles dans de nombreuses couleurs. </span>
@@ -326,7 +326,7 @@
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
               <figure id='clotheswife_2'>
-                <img src="assets/img/vetements/femme/breton2.jpg" title="breton2" ref="00023" alt="Bretagne Breizh Moucheture D'Hermine T-shirt Femme à manches retroussées" height="300px" width="300px"/>
+                <img src="assets/img/vetements/femme/breton2.jpg" title="breton2" ref="23" alt="Bretagne Breizh Moucheture D'Hermine T-shirt Femme à manches retroussées" height="300px" width="300px"/>
                 <figcaption class="titre">Bretagne Breizh Moucheture D'Hermine T-shirt Femme à manches retroussées</figcaption>
                 <figcaption class="price">Prix : 19 hermines</figcaption>
                 <span hidden="hidden" class="descr" class='descr'>Cet emblème héraldique désignant une moucheture d'hermine stylisée est connu parce qu'il figure sur le drapeau breton. Un design classique pour tous ceux et celles qui portent la Bretagne dans leur cœur.Ce T-shirt à la coupe décontractée et au style Boyfriend est parfait pour vos après-midi de détente ou vos soirées relax entre amis. </span>
@@ -335,7 +335,7 @@
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
               <figure id='clotheswife_3'>
-                <img src="assets/img/vetements/femme/breton5.jpg" title="breton3" ref="00024" alt="Hauts à Manches Longues Femme" height="300px" width="300px"/>
+                <img src="assets/img/vetements/femme/breton5.jpg" title="breton3" ref="24" alt="Hauts à Manches Longues Femme" height="300px" width="300px"/>
                 <figcaption class="titre">Hauts à Manches Longues Femme</figcaption>
                 <figcaption class="price">Prix : 27 hermines</figcaption>
                 <span hidden="hidden" class="descr" class='descr'>Ce pull en maille fin a été tricoté en fils de mélange viscose et d'acotton. La conception droppedshoulder est soulignée par les bandes de horizontalknitted sur cette encolure bateau en tricot. Longueur milieu dos est 63cm taille petit.</span>
@@ -344,7 +344,7 @@
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
               <figure id='clotheswife_4'>
-                <img src="assets/img/vetements/femme/breton4.jpg" title="breton4" ref="00025" alt="Bretagne Trop Breizh Pour Toi T-shirt Femme à manches retroussées" height="300px" width="300px"/>
+                <img src="assets/img/vetements/femme/breton4.jpg" title="breton4" ref="25" alt="Bretagne Trop Breizh Pour Toi T-shirt Femme à manches retroussées" height="300px" width="300px"/>
                 <figcaption class="titre">Bretagne Trop Breizh Pour Toi T-shirt Femme à manches retroussées </figcaption>
                 <figcaption class="price">Prix : 20 hermines</figcaption>
                 <span hidden="hidden" class="descr" class='descr'>Dans cette question se cachent beaucoup de choses typiquement bretonnes comme une galette bretonne, une moucheture d'hermine, une harpe, un triskèle, un phare et un menhir. Une typographie pour les fans de la Bretagne.Ce T-shirt à la coupe décontractée et au style Boyfriend est parfait pour vos après-midi de détente ou vos soirées relax entre amis.</span>
@@ -353,7 +353,7 @@
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
               <figure id='clotheswife_5'>
-                <img src="assets/img/vetements/femme/fchaussette.jpg" title="breton5" ref="00026" alt="Gant Premium Rayure Bretonne En Coton Doux Chaussettes Hommes, Rose/marine" height="300px" width="300px"/>
+                <img src="assets/img/vetements/femme/fchaussette.jpg" title="breton5" ref="26" alt="Gant Premium Rayure Bretonne En Coton Doux Chaussettes Hommes, Rose/marine" height="300px" width="300px"/>
                 <figcaption class="titre">Gant Premium Rayure Bretonne En Coton Doux Chaussettes Hommes, Rose/marine</figcaption>
                 <figcaption class="price">Prix : 14 hermines</figcaption>
                 <span hidden="hidden" class="descr" class='descr'>Chaussettes rayé femme vibrant de Gant. Ces femmes chaussettes caractéristique d'un design audacieux de Breton rayé en rose et bleu marine, avec poignées de cheville côtelée et contraste Gant branding. Contrasté talon, cheville et les orteils. Tissu plus beau coton peigné et une exécution parfaite fournissent une usure distinctive pour le confort</span>
@@ -367,7 +367,7 @@
           <div class="row">
             <div class="col-lg-offset-1 col-lg-2 col-md-offset-0 col-md-3 col-sm-offset-0 col-sm-4 col-xs-offset-0 col-xs-6">
               <figure id='clotheschild_1'>
-                <img src="assets/img/vetements/enfant/breton1.jpg" title="breton1" ref="00027" alt="Inspire par Breton Envy You're A Tourist Officieux Sweat a Capuche des Enfants " height="300px" width="300px"/>
+                <img src="assets/img/vetements/enfant/breton1.jpg" title="breton1" ref="27" alt="Inspire par Breton Envy You're A Tourist Officieux Sweat a Capuche des Enfants " height="300px" width="300px"/>
                 <figcaption class="titre">Inspire par Breton Envy You're A Tourist Officieux Sweat a Capuche des Enfants </figcaption>
                 <figcaption class="price">Prix : 30 hermines</figcaption>
                 <span hidden="hidden" class="descr" class='descr'>Ce Inspire par Breton Envy You're A Tourist Officieux Sweat a capuche est une conception originale de Inspired Apparel. Ce sweat a capuche peut egalement etre achete dans des styles d'adultes et est disponible dans une variete de tailles et de couleurs </span>
@@ -376,7 +376,7 @@
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
               <figure id='clotheschild_2'>
-                <img src="assets/img/vetements/enfant/breton2.jpg" title="breton2" ref="00028" alt="Inspire par Breton Envy You're A Tourist Officieux Sweat-Shirt des Enfants " height="300px" width="300px"/>
+                <img src="assets/img/vetements/enfant/breton2.jpg" title="breton2" ref="28" alt="Inspire par Breton Envy You're A Tourist Officieux Sweat-Shirt des Enfants " height="300px" width="300px"/>
                 <figcaption class="titre">Inspire par Breton Envy You're A Tourist Officieux Sweat-Shirt des Enfants </figcaption>
                 <figcaption class="price">Prix : 19 hermines</figcaption>
                 <span hidden="hidden" class="descr" class='descr'>Ce Inspire par Breton Envy You're A Tourist Officieux Sweat-Shirt est une conception originale de Inspired Apparel. Ce chandail peut egalement etre achete dans des styles d'adultes et est disponible dans une variete de tailles et de couleurs.</span>
@@ -385,7 +385,7 @@
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
               <figure id='clotheschild_3'>
-                <img src="assets/img/vetements/enfant/breton3.jpg" title="breton3" ref="00029" alt="Armor Lux - tee-shirt " height="300px" width="300px"/>
+                <img src="assets/img/vetements/enfant/breton3.jpg" title="breton3" ref="29" alt="Armor Lux - tee-shirt " height="300px" width="300px"/>
                 <figcaption class="titre">Bretagne Made In Breizh Pur Breton Body bébé bio manches courtes</figcaption>
                 <figcaption class="price">Prix : 20 hermines</figcaption>
                 <span hidden="hidden" class="descr" class='descr'>Si vous êtes né(e) en Bretagne, montrez à quel point vous êtes fier de venir de la Breizh avec ce design au style d'une estampille. C'est seulement pour ceux qui sont à 100% pur Bretons.</span>
@@ -394,7 +394,7 @@
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
               <figure id='clotheschild_4'>
-                <img src="assets/img/vetements/enfant/breton4.jpg" title="breton4" ref="00030" alt="Noppies B Tee Ls Ida, T-Shirt Manches Longues Mixte Bébé" height="300px" width="300px"/>
+                <img src="assets/img/vetements/enfant/breton4.jpg" title="breton4" ref="30" alt="Noppies B Tee Ls Ida, T-Shirt Manches Longues Mixte Bébé" height="300px" width="300px"/>
                 <figcaption class="titre">Noppies B Tee Ls Ida, T-Shirt Manches Longues Mixte Bébé</figcaption>
                 <figcaption class="price">Prix : 14 hermines</figcaption>
                 <span hidden="hidden" class="descr" class='descr'>Le shirt bébé Deforest de Noppies est pourvu d'un motif à rayures breton et d'un texte imprimé couleur néon. Un basique qui permet des combinaisons illimitées.Les boutons-pression pratiques dans le cou facilitent l'habillage. </span>
@@ -403,7 +403,7 @@
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
               <figure id='clotheschild_5'>
-                <img src="assets/img/vetements/enfant/breton5.jpg" title="breton5" ref="00031" alt="Splash About Ensemble haut et short pour enfant Protection anti-UV " height="300px" width="300px"/>
+                <img src="assets/img/vetements/enfant/breton5.jpg" title="breton5" ref="31" alt="Splash About Ensemble haut et short pour enfant Protection anti-UV " height="300px" width="300px"/>
                 <figcaption class="titre">Splash About Ensemble haut et short pour enfant Protection anti-UV </figcaption>
                 <figcaption class="price">Prix : 38 hermines</figcaption>
                 <span hidden="hidden" class="descr" class='descr'>Doux et agréable au porter et superbe belle allure. Plutôt que le Tout En Un, les Ensembles Sous le Soleil peuvent éviter beaucoup de perte de temps (et peuvent donc éviter de petits accidents embarrassants) pour les jeunes enfants qui en aurait besoin, grâce au Short.</span>
@@ -417,7 +417,7 @@
           <div class="row">
             <div class="col-lg-offset-1 col-lg-2 col-md-offset-0 col-md-3 col-sm-offset-0 col-sm-4 col-xs-offset-0 col-xs-6">
               <figure id='accessory_1'>
-                <img src="assets/img/vetements/accessoire/bonnet.jpg" title="bonnet" ref="00032" alt="PATOUTATIS - Bob marin coton docker motif TRISKEL breton bretagne - mixte homme / femme " height="300px" width="300px"/>
+                <img src="assets/img/vetements/accessoire/bonnet.jpg" title="bonnet" ref="32" alt="PATOUTATIS - Bob marin coton docker motif TRISKEL breton bretagne - mixte homme / femme " height="300px" width="300px"/>
                 <figcaption class="titre">PATOUTATIS - Bob marin coton docker motif TRISKEL breton bretagne - mixte homme / femme </figcaption>
                 <figcaption class="price">Prix : 17 hermines</figcaption>
                 <span hidden="hidden" class="descr" class='descr'>Bob. Mixte. Surpiqûres sur bord. 100% coton brossé lourd. 4 oeillets d'aération Oeillets d'aérations brodés. Bandeau de transpiration satin. Fermeture Velcro. Broderie sur le devant </span>
@@ -426,7 +426,7 @@
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
               <figure id='accessory_2'>
-                <img src="assets/img/vetements/accessoire/casquette.jpg" title="casquette" ref="00033" alt="sterkowski hommes de style pêcheur maciejówka Fiddler Casquette " height="300px" width="300px"/>
+                <img src="assets/img/vetements/accessoire/casquette.jpg" title="casquette" ref="33" alt="sterkowski hommes de style pêcheur maciejówka Fiddler Casquette " height="300px" width="300px"/>
                 <figcaption class="titre">Sterkowski hommes de style pêcheur maciejówka Fiddler Casquette </figcaption>
                 <figcaption class="price">Prix : 29 hermines</figcaption>
                 <span hidden="hidden" class="descr" class='descr'>Une casquette « oldschool » à visière qui fait penser à une casquette de capitaine</span>
@@ -435,7 +435,7 @@
             </div>
             <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
               <figure id='accessory_3'>
-                <img id='test' src="assets/img/vetements/accessoire/parapluie.jpg" ref="00034" title="breton3" alt="parapluie breton motifs breton" height="300px" width="300px"/>
+                <img id='test' src="assets/img/vetements/accessoire/parapluie.jpg" ref="34" title="breton3" alt="parapluie breton motifs breton" height="300px" width="300px"/>
                 <figcaption class="titre">Parapluie breton motifs breton</figcaption>
                 <figcaption class="price">Prix : 40 hermines</figcaption>
                 <span hidden="hidden" class="descr" class='descr'>Parapluie breton d 1.08m </span>
@@ -450,7 +450,7 @@
         <div class="row">
           <div class="col-lg-offset-1 col-lg-2 col-md-offset-0 col-md-3 col-sm-offset-0 col-sm-4 col-xs-offset-0 col-xs-6">
             <figure id="ustensils_1">
-              <img src="assets/img/ustensiles/billig.jpg" title="Billig" ref="00035" alt="Billig"/>
+              <img src="assets/img/ustensiles/billig.jpg" title="Billig" ref="35" alt="Billig"/>
               <figcaption class="titre">Billig</figcaption>
               <figcaption class="price">Prix : 30 hermines</figcaption>
               <span hidden="hidden" class="descr">Idéal pour vos galettes et vos crêpes, Billig ne vous quittera plus. Jamais.</span>
@@ -459,7 +459,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="ustensils_2">
-              <img src="assets/img/ustensiles/fouet.jpg" title="Fouet" ref="00036" alt="Fouet"/>
+              <img src="assets/img/ustensiles/fouet.jpg" title="Fouet" ref="36" alt="Fouet"/>
               <figcaption class="titre">Fouet</figcaption>
               <figcaption class="price">Prix : 5 hermines</figcaption>
               <span hidden="hidden" class="descr">Ce magnifique fouet (l'ustensile de cuisine, pas l'autre...) mélangera vos pâtes à crêpes à la perfection !</span>
@@ -468,7 +468,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="ustensils_3">
-              <img src="assets/img/ustensiles/louche-crepes.jpg" ref="00037" title="Louche" alt="Louche à crêpes"/>
+              <img src="assets/img/ustensiles/louche-crepes.jpg" ref="37" title="Louche" alt="Louche à crêpes"/>
               <figcaption class="titre">Louche à crèpes</figcaption>
               <figcaption class="price">Prix : 5 hermines</figcaption>
               <span hidden="hidden" class="descr">Pour réussir vos crêpes, il vous faudra impérativement cette louche de grande qualité, parce que non, on ne verse pas la pâte directement sur Billig !</span>
@@ -477,7 +477,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="ustensils_4">
-              <img src="assets/img/ustensiles/rateau-crepe-rond.jpg" title="Rateau" ref="00038" alt="Râteau pour crêpière ronde"/>
+              <img src="assets/img/ustensiles/rateau-crepe-rond.jpg" title="Rateau" ref="38" alt="Râteau pour crêpière ronde"/>
               <figcaption class="titre">Râteau pour crêpière ronde</figcaption>
               <figcaption class="price">Prix : 7 hermines</figcaption>
               <span hidden="hidden" class="descr">Pour magnifiquement répartir la pâte, cette spatule vous sera tout bonnement indispensable !</span>
@@ -486,7 +486,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="ustensils_5">
-              <img src="assets/img/ustensiles/spatule-crepes.jpg" title="Spatule" ref="00039" alt="Spatule à crêpes"/>
+              <img src="assets/img/ustensiles/spatule-crepes.jpg" title="Spatule" ref="39" alt="Spatule à crêpes"/>
               <figcaption class="titre">Spatule à crêpes</figcaption>
               <figcaption class="price">Prix : 8 hermines</figcaption>
               <span hidden="hidden" class="descr">Et hop ! On retourne la crêpe avec une facilité sans bornes avec une spatule comme celle-là !</span>
@@ -500,7 +500,7 @@
         <div class="row">
           <div class="col-lg-offset-1 col-lg-2 col-md-offset-0 col-md-3 col-sm-offset-0 col-sm-4 col-xs-offset-0 col-xs-6">
             <figure id="disc_1">
-              <img src="assets/img/musiques/CDs/Ame-de-Bretagne-Tri-Yann.jpg" ref="00040" title="Ame-de-Bretagne" alt="Ame de Bretagne Tri Yann"/>
+              <img src="assets/img/musiques/CDs/Ame-de-Bretagne-Tri-Yann.jpg" ref="40" title="Ame-de-Bretagne" alt="Ame de Bretagne Tri Yann"/>
               <figcaption class="titre">CD Ame de Bretagne Tri Yann</figcaption>
               <figcaption class="price">Prix : 10 hermines</figcaption>
               <span hidden="hidden" class="descr">Magnifique CD Ame de Bretagne du célèbre chanteur internationalement connu en Bretagne, Tri Yann</span>
@@ -509,7 +509,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="disc_2">
-              <img src="assets/img/musiques/CDs/Ar-vreudeur-Morvan.jpg" title="Ar-vreudeur" ref="00041" alt="Ar vreudeur Morvan"/>
+              <img src="assets/img/musiques/CDs/Ar-vreudeur-Morvan.jpg" title="Ar-vreudeur" ref="41" alt="Ar vreudeur Morvan"/>
               <figcaption class="titre">Ar vreudeur Morvan</figcaption>
               <figcaption class="price">Prix : 8 hermines</figcaption>
               <span hidden="hidden" class="descr">Les fèreres Morvan donnent leur dernier souffle dans cet album Ar vreudeur</span>
@@ -518,7 +518,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="disc_3">
-              <img src="assets/img/musiques/CDs/Best-of-Tri-Yann.jpg" title="Best-of Manau" ref="00041" alt="Best-of Manau"/>
+              <img src="assets/img/musiques/CDs/Best-of-Tri-Yann.jpg" title="Best-of Manau" ref="41" alt="Best-of Manau"/>
               <figcaption class="titre">Best-of Tri-Yann</figcaption>
               <figcaption class="price">Prix : 12 hermines</figcaption>
               <span hidden="hidden" class="descr">Les plus belles chansons (ou pas) de Manau (c'est qui ?)</span>
@@ -527,7 +527,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="disc_4">
-              <img src="assets/img/musiques/CDs/Breton-celtic-folk.jpeg" title="Breton celtic folk" ref="00042" alt="Breton celtic folk"/>
+              <img src="assets/img/musiques/CDs/Breton-celtic-folk.jpeg" title="Breton celtic folk" ref="42" alt="Breton celtic folk"/>
               <figcaption class="titre">Breton celtic folk</figcaption>
               <figcaption class="price">Prix : 2 hermines</figcaption>
               <span hidden="hidden" class="descr">Profitez-en ça vaut rien</span>
@@ -536,7 +536,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="disc_5">
-              <img src="assets/img/musiques/CDs/Bro-gozh-ma-zadou.jpg" title="Bro-gozh-ma-zadou" ref="00043" alt="Bro-gozh-ma-zadou l'hyme"/>
+              <img src="assets/img/musiques/CDs/Bro-gozh-ma-zadou.jpg" title="Bro-gozh-ma-zadou" ref="43" alt="Bro-gozh-ma-zadou l'hyme"/>
               <figcaption class="titre">CD Ame de Bretagne Tri Yann</figcaption>
               <figcaption class="price">Prix : 10 hermines</figcaption>
               <span hidden="hidden" class="descr">L'hymne breton ça se respecte!!</span>
@@ -545,7 +545,7 @@
           </div>
           <div class="col-lg-offset-1 col-lg-2 col-md-offset-0 col-md-3 col-sm-offset-0 col-sm-4 col-xs-offset-0 col-xs-6">
             <figure id="disc_6">
-              <img src="assets/img/musiques/CDs/Chants-traditionnels-Bretons.jpg" title="Chants traditionnels" ref="00044" alt="Chants traditionnels Bretons"/>
+              <img src="assets/img/musiques/CDs/Chants-traditionnels-Bretons.jpg" title="Chants traditionnels" ref="44" alt="Chants traditionnels Bretons"/>
               <figcaption class="titre">Les chants traditionnels Bretons</figcaption>
               <figcaption class="price">Prix : 10 hermines</figcaption>
               <span hidden="hidden" class="descr">Apprenez à danser sur les danses traditionnelles</span>
@@ -554,7 +554,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id=disc7>
-              <img src="assets/img/musiques/CDs/Comptines-celtiques.jpg" title="Comptines celtes" ref="00045" alt="Comptines celtiques"/>
+              <img src="assets/img/musiques/CDs/Comptines-celtiques.jpg" title="Comptines celtes" ref="45" alt="Comptines celtiques"/>
               <figcaption class="titre">Comptines celtiques</figcaption>
               <figcaption class="price">Prix : 8 hermines</figcaption>
               <span hidden="hidden" class="descr">Fais dodo colas mon pti frère version celte</span>
@@ -563,7 +563,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="disc_8">
-              <img src="assets/img/musiques/CDs/Gwenn-ha-Du.jpg" title="Gwenn-ha-Du.jpg" ref="00046" alt="Gwen ha du red cardell bagad de kemper"/>
+              <img src="assets/img/musiques/CDs/Gwenn-ha-Du.jpg" title="Gwenn-ha-Du.jpg" ref="46" alt="Gwen ha du red cardell bagad de kemper"/>
               <figcaption class="titre">Gwen ha du par red cardell et le bagad de kemper</figcaption>
               <figcaption class="price">Prix : 15 hermines</figcaption>
               <span hidden="hidden" class="descr">Décourvrez de la vraie musique version bagad!!</span>
@@ -572,7 +572,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="disc_9">
-              <img src="assets/img/musiques/CDs/Horizons-celtiques-Dan-Ar-Braz-Coffret-2-DVD-2-CD.jpg" title="Horizons-celtiques" ref="00047" alt="Horizons celtiques Dan-Ar-Braz"/>
+              <img src="assets/img/musiques/CDs/Horizons-celtiques-Dan-Ar-Braz-Coffret-2-DVD-2-CD.jpg" title="Horizons-celtiques" ref="47" alt="Horizons celtiques Dan-Ar-Braz"/>
               <figcaption class="titre">Horizons celtiques Dan-Ar-Braz</figcaption>
               <figcaption class="price">Prix : 10 hermines</figcaption>
               <span  hidden="hidden" class="descr">Encore et toujours Dan-Ar-Braz vraiment un manque d'originalité</span>
@@ -584,7 +584,7 @@
         <div class="row">
           <div class="col-lg-offset-1 col-lg-2 col-md-offset-0 col-md-3 col-sm-offset-0 col-sm-4 col-xs-offset-0 col-xs-6">
             <figure id="instrument_1">
-              <img src="assets/img/musiques/Instruments/biniou.jpg" title="biniou" ref="00048" alt="biniou"/>
+              <img src="assets/img/musiques/Instruments/biniou.jpg" title="biniou" ref="48" alt="biniou"/>
               <figcaption class="titre">Le biniou</figcaption>
               <figcaption class="price">Prix : 500 hermines</figcaption>
               <span hidden="hidden" class="descr">L'authentique instrument breton à prendre absolument si on a du souffle</span>
@@ -593,7 +593,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="instrument_2">
-              <img src="assets/img/musiques/Instruments/bombarde.jpg" title="bombarde" ref="00049" alt="bombarde"/>
+              <img src="assets/img/musiques/Instruments/bombarde.jpg" title="bombarde" ref="49" alt="bombarde"/>
               <figcaption class="titre">Bombarde</figcaption>
               <figcaption class="price">Prix : 700 hermines</figcaption>
               <span hidden="hidden" class="descr">Attention à ne pas exploser en essayant de sortir un son de cet instrument magnifique</span>
@@ -602,7 +602,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="instrument_3">
-              <img src="assets/img/musiques/Instruments/tambours.jpeg" title="grosse caisse" ref="00050" alt="grosse caisse de bagad"/>
+              <img src="assets/img/musiques/Instruments/tambours.jpeg" title="grosse caisse" ref="50" alt="grosse caisse de bagad"/>
               <figcaption class="titre">Grosse caisse de bagad</figcaption>
               <figcaption class="price">Prix : 600 hermines</figcaption>
               <span hidden="hidden" class="descr">Les plus belles chansons (ou pas) de Manau (c'est qui ?)</span>
@@ -611,7 +611,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="instrument_4">
-              <img src="assets/img/musiques/Instruments/veuze.jpeg " title="veuze" ref="00051" alt="veuze"/>
+              <img src="assets/img/musiques/Instruments/veuze.jpeg " title="veuze" ref="51" alt="veuze"/>
               <figcaption class="titre">Une veuze</figcaption>
               <figcaption class="price">Prix : 250 hermines</figcaption>
               <span hidden="hidden" class="descr">Pareil que le biniou mais en plus petit donc moins cher</span>
@@ -620,7 +620,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="instrument_5">
-              <img src="assets/img/musiques/Instruments/vieilleARoue.jpeg" title="vieille a roue" ref="00052" alt="vieille a roue"/>
+              <img src="assets/img/musiques/Instruments/vieilleARoue.jpeg" title="vieille a roue" ref="52" alt="vieille a roue"/>
               <figcaption class="titre">vieille a roue</figcaption>
               <figcaption class="price">Prix : 300 hermines</figcaption>
               <span hidden="hidden" class="descr">Tu hésites entre le violon et l'accordéon. On te présente la vieille à roue</span>
@@ -634,7 +634,7 @@
         <div class="row">
           <div class="col-lg-offset-1 col-lg-2 col-md-offset-0 col-md-3 col-sm-offset-0 col-sm-4 col-xs-offset-0 col-xs-6">
             <figure id="book_1">
-              <img src="assets/img/livres/Ces-Bretons-qui-ont-fait-l-histoire.jpg" title="Livre Ces bretons qui ont fait l'histoire" ref="00053" alt="Livre Ces bretons qui ont fait l'histoire"/>
+              <img src="assets/img/livres/Ces-Bretons-qui-ont-fait-l-histoire.jpg" title="Livre Ces bretons qui ont fait l'histoire" ref="53" alt="Livre Ces bretons qui ont fait l'histoire"/>
               <figcaption class="titre">Ces bretons qui ont fait l'histoire</figcaption>
               <figcaption class="price">Prix : 25 hermines</figcaption>
               <button name="panier"><i class="icofont icofont-basket"></i></button>
@@ -643,7 +643,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="book_2">
-              <img src="assets/img/livres/Grandes-et-petites-histoire-des-trois-villes-Saint-Malo-Saint-Servan-Parame.jpg" ref="00054" title="Livre histoire de St-Malo, Saint Servan et Parame" alt="Livre histoire de St-Malo, Saint Servan et Parame"/>
+              <img src="assets/img/livres/Grandes-et-petites-histoire-des-trois-villes-Saint-Malo-Saint-Servan-Parame.jpg" ref="54" title="Livre histoire de St-Malo, Saint Servan et Parame" alt="Livre histoire de St-Malo, Saint Servan et Parame"/>
               <figcaption class="titre">Villes Saint-Malo, Saint-Servan et Parame</figcaption>
               <figcaption class="price">Prix : 25 hermines</figcaption>
               <button name="panier"><i class="icofont icofont-basket"></i></button>
@@ -652,7 +652,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="book_3">
-              <img src="assets/img/livres/Guide-du-Routard-Bretagne-Nord.jpg" title="Guide du routard Bretagne Nord" ref="00055" alt="Guide du routard Bretagne Nord"/>
+              <img src="assets/img/livres/Guide-du-Routard-Bretagne-Nord.jpg" title="Guide du routard Bretagne Nord" ref="55" alt="Guide du routard Bretagne Nord"/>
               <figcaption class="titre">Guide du routard Bretagne Nord</figcaption>
               <figcaption class="price">Prix : 30 hermines</figcaption>
               <span hidden="hidden" class="descr">Vous rêvez de visiter la Bretagne ? Vous êtes bizarres... Mais ce guide vous aidera dans vos recherches et dans votre périple !</span>
@@ -661,7 +661,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="book_4">
-              <img src="assets/img/livres/Guide-du-Routard-Bretagne-Sud.jpg" title="Guide du routard Bretagne Sud" ref="00056" alt="Guide du routard Bretagne Sud"/>
+              <img src="assets/img/livres/Guide-du-Routard-Bretagne-Sud.jpg" title="Guide du routard Bretagne Sud" ref="56" alt="Guide du routard Bretagne Sud"/>
               <figcaption class="titre">Guide du routard Bretagne Sud</figcaption>
               <figcaption class="price">Prix : 30 hermines</figcaption>
               <span hidden="hidden" class="descr">Encore ? La Bretagne Sud maintenant ! La Bretagne, ça vous gagne ! Bonne chance !</span>
@@ -670,7 +670,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="book_5">
-              <img src="assets/img/livres/Guide-du-Routard-Golfe-du-Morbihan.jpg" title="Guide du routard Golfe du Morbihan" ref="00057" alt="Guide du routard Golfe du Morbihan"/>
+              <img src="assets/img/livres/Guide-du-Routard-Golfe-du-Morbihan.jpg" title="Guide du routard Golfe du Morbihan" ref="57" alt="Guide du routard Golfe du Morbihan"/>
               <figcaption class="titre">Guide du routard Golfe du Morbihan</figcaption>
               <figcaption class="price">Prix : 30 hermines</figcaption>
               <span hidden="hidden" class="descr">Ah... Le Golfe du Morbihan maintenant ? Vous êtes vraiment dignue ! Bon voyage quand même !</span>
@@ -679,7 +679,7 @@
           </div>
           <div class="col-lg-offset-1 col-lg-2 col-md-offset-0 col-md-3 col-sm-offset-0 col-sm-4 col-xs-offset-0 col-xs-6">
             <figure id="book_6">
-              <img src="assets/img/livres/Ille-et-Vilaine-100-lieux-pour-les-curieux.jpg" title="100 lieux pour les curieux en Ille et Vilaine" ref="00058" alt="100 lieux pour les curieux en Ille et Vilaine"/>
+              <img src="assets/img/livres/Ille-et-Vilaine-100-lieux-pour-les-curieux.jpg" title="100 lieux pour les curieux en Ille et Vilaine" ref="58" alt="100 lieux pour les curieux en Ille et Vilaine"/>
               <figcaption class="titre">100 lieux pour les curieux en Ille et Vilaine</figcaption>
               <figcaption class="price">Prix : 20 hermines</figcaption>
               <span hidden="hidden" class="descr">Vous êtes vraiment curieux au point de partir en Ille et Vilaine ?? Dans ce cas, ce livre est fait pour vous !</span>
@@ -688,7 +688,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="book_7">
-              <img src="assets/img/livres/Le-chateau-du-taureau-et-la-baie-de-Morlaix.jpg" title="Le château du taureau et la baie de Morlaix" ref="00059" alt="Le château du taureau et la baie de Morlaix"/>
+              <img src="assets/img/livres/Le-chateau-du-taureau-et-la-baie-de-Morlaix.jpg" title="Le château du taureau et la baie de Morlaix" ref="59" alt="Le château du taureau et la baie de Morlaix"/>
               <figcaption class="titre">Le château du taureau et la baie de Morlaix</figcaption>
               <figcaption class="price">Prix : 20 hermines</figcaption>
               <span hidden="hidden" class="descr">Vous savez où ça se trouve ? Nan parce que moi non. Mais ça a vraiment l'air intéressant !</span>
@@ -697,7 +697,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="book_8">
-              <img src="assets/img/livres/Les-baies-de-Saint-Malo-et-de-Saint-Brieuc.jpg" title="Les baies de Saint-Malo et de Saint-Brieuc" ref="00060" alt="Les baies de Saint-Malo et de Saint-Brieuc"/>
+              <img src="assets/img/livres/Les-baies-de-Saint-Malo-et-de-Saint-Brieuc.jpg" title="Les baies de Saint-Malo et de Saint-Brieuc" ref="60" alt="Les baies de Saint-Malo et de Saint-Brieuc"/>
               <figcaption class="titre">Les baies de Saint-Malo et de Saint-Brieuc</figcaption>
               <figcaption class="price">Prix : 15 hermines</figcaption>
               <span hidden="hidden" class="descr">De belles baies ! Superbes ! Achetez !</span>
@@ -706,7 +706,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="book_9">
-              <img src="assets/img/livres/Lorient-ville-portuaire.jpg" title="Lorient, ville portuaire" ref="00061" alt="Lorient, ville portuaire"/>
+              <img src="assets/img/livres/Lorient-ville-portuaire.jpg" title="Lorient, ville portuaire" ref="61" alt="Lorient, ville portuaire"/>
               <figcaption class="titre">Lorient, ville portuaire</figcaption>
               <figcaption class="price">Prix : 20 hermines</figcaption>
               <span hidden="hidden" class="descr">Lorient ? En Occident ? Pas mal !</span>
@@ -715,7 +715,7 @@
           </div>
           <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <figure id="book_10">
-              <img src="assets/img/livres/Religion-et-cultures-en-bretagne.jpg" title="Religion et cultures en Bretagne" ref="00062" alt="Religion et cultures en Bretagne"/>
+              <img src="assets/img/livres/Religion-et-cultures-en-bretagne.jpg" title="Religion et cultures en Bretagne" ref="62" alt="Religion et cultures en Bretagne"/>
               <figcaption class="titre">Religion et cultures en Bretagne</figcaption>
               <figcaption class="price">Prix : 15 hermines</figcaption>
               <span hidden="hidden" class="descr">Parlons religion ! C'est un sujet qui n'apporte jamais de débat, c'est génial ! Sinon, le livre est intéressant ! Promis</span>
@@ -724,7 +724,7 @@
           </div>
           <div class="col-lg-offset-1 col-lg-2 col-md-offset-0 col-md-3 col-sm-offset-0 col-sm-4 col-xs-offset-0 col-xs-6">
             <figure id="book_11">
-              <img src="assets/img/livres/Rennes-pendant-la-guerre.jpg" title="Rennes pendant la guerre" ref="00063" alt="Rennes pendant la guerre"/>
+              <img src="assets/img/livres/Rennes-pendant-la-guerre.jpg" title="Rennes pendant la guerre" ref="63" alt="Rennes pendant la guerre"/>
               <figcaption class="titre">Rennes pendant la guerre</figcaption>
               <figcaption class="price">Prix : 13 hermines</figcaption>
               <span hidden="hidden" class="descr">C'est toujours sympa de voir les photos des lieux pendant la guerre, et maintenant !</span>
@@ -738,7 +738,7 @@
         <h2>Jeux et décorations</h2>
         <div class="col-lg-offset-1 col-lg-2 col-md-offset-0 col-md-3 col-sm-offset-0 col-sm-4 col-xs-offset-0 col-xs-6">
           <figure id="decoration_1">
-            <img src="assets/img/decoration/Abreton.jpeg" title="Abreton" ref="00064" alt="Abreton"/>
+            <img src="assets/img/decoration/Abreton.jpeg" title="Abreton" ref="64" alt="Abreton"/>
             <figcaption class="titre">Abreton</figcaption>
             <figcaption class="price">Prix : 10 hermines</figcaption>
             <span hidden="hidden" class="descr">Abreton, 10 hermines</span>
@@ -747,7 +747,7 @@
         </div>
         <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
           <figure id="decoration_2">
-            <img src="assets/img/decoration/autocollantBZH.png" title="Autocollant" ref="00065" alt="Autocollant"/>
+            <img src="assets/img/decoration/autocollantBZH.png" title="Autocollant" ref="65" alt="Autocollant"/>
             <figcaption class="titre">Autocollant</figcaption>
             <figcaption class="price">Prix : 10 hermines</figcaption>
             <span hidden="hidden" class="descr">Autocollant, 10 hermines</span>
@@ -756,7 +756,7 @@
         </div>
         <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
           <figure id="decoration_3">
-            <img src="assets/img/decoration/boulebretonne.jpeg" title="Boule bretonne" ref="00066" alt="Boule bretonne"/>
+            <img src="assets/img/decoration/boulebretonne.jpeg" title="Boule bretonne" ref="66" alt="Boule bretonne"/>
             <figcaption class="titre">Boule bretonne</figcaption>
             <figcaption class="price">Prix : 10 hermines</figcaption>
             <span hidden="hidden" class="descr">Boule bretonne, 10 hermines</span>
@@ -765,7 +765,7 @@
         </div>
         <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
           <figure id="decoration_4">
-            <img src="assets/img/decoration/bouledenoel.jpeg" title="Boule de Noël" ref="00067" alt="Boule de Noël"/>
+            <img src="assets/img/decoration/bouledenoel.jpeg" title="Boule de Noël" ref="67" alt="Boule de Noël"/>
             <figcaption class="titre">Boule de Noël</figcaption>
             <figcaption class="price">Prix : 10 hermines</figcaption>
             <span hidden="hidden" class="descr">Boule de Noël, 10 hermines</span>
@@ -774,7 +774,7 @@
         </div>
         <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
           <figure id="decoration_5">
-            <img src="assets/img/decoration/cendrier.jpeg" title="Cendrier" ref="00068" alt="Cendrier"/>
+            <img src="assets/img/decoration/cendrier.jpeg" title="Cendrier" ref="68" alt="Cendrier"/>
             <figcaption class="titre">Cendrier</figcaption>
             <figcaption class="price">Prix : 10 hermines</figcaption>
             <span hidden="hidden" class="descr">Cendrier, 10 hermines</span>
@@ -783,7 +783,7 @@
         </div>
         <div class="col-lg-offset-1 col-lg-2 col-md-offset-0 col-md-3 col-sm-offset-0 col-sm-4 col-xs-offset-0 col-xs-6">
           <figure id="decoration_6">
-            <img src="assets/img/decoration/decapsuleurbreton.jpeg" title="Décapsuleur breton" ref="00069" alt="Décpsuleur breton"/>
+            <img src="assets/img/decoration/decapsuleurbreton.jpeg" title="Décapsuleur breton" ref="69" alt="Décpsuleur breton"/>
             <figcaption class="titre">Décapsuleur breton</figcaption>
             <figcaption class="price">Prix : 10 hermines</figcaption>
             <span hidden="hidden" class="descr">Décapsuleur breton, 10 hermines</span>
@@ -792,7 +792,7 @@
         </div>
         <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
           <figure id="decoration_7">
-            <img src="assets/img/decoration/drapeaudebureau.jpeg" title="Drapeau de bureau" ref="00070" alt="Drapeau de bureau"/>
+            <img src="assets/img/decoration/drapeaudebureau.jpeg" title="Drapeau de bureau" ref="70" alt="Drapeau de bureau"/>
             <figcaption class="titre">Drapeau de bureau</figcaption>
             <figcaption class="price">Prix : 10 hermines</figcaption>
             <span hidden="hidden" class="descr">Drapeau de bureau, 10 hermines</span>
@@ -801,7 +801,7 @@
         </div>
         <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
           <figure id="decoration_8">
-            <img src="assets/img/decoration/fanionbreton.jpeg" title="Fanion breton" ref="00071" alt="Fanion breton"/>
+            <img src="assets/img/decoration/fanionbreton.jpeg" title="Fanion breton" ref="71" alt="Fanion breton"/>
             <figcaption class="titre">Fanion breton</figcaption>
             <figcaption class="price">Prix : 10 hermines</figcaption>
             <span hidden="hidden" class="descr">Fanion breton, 10 hermines</span>
@@ -810,7 +810,7 @@
         </div>
         <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
           <figure id="decoration_9">
-            <img src="assets/img/decoration/foulard.jpeg" title="Foulard" ref="00072" alt="Foulard"/>
+            <img src="assets/img/decoration/foulard.jpeg" title="Foulard" ref="72" alt="Foulard"/>
             <figcaption class="titre">Foulard</figcaption>
             <figcaption class="price">Prix : 10 hermines</figcaption>
             <span hidden="hidden" class="descr">Foulard, 10 hermines</span>
@@ -819,7 +819,7 @@
         </div>
         <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
           <figure id="decoration_10">
-            <img src="assets/img/decoration/jeuxde12palets.jpeg" title="Jeux de 12 palets" ref="00073" alt="Jeux de 12 palets"/>
+            <img src="assets/img/decoration/jeuxde12palets.jpeg" title="Jeux de 12 palets" ref="73" alt="Jeux de 12 palets"/>
             <figcaption class="titre">Jeu de 12 palets</figcaption>
             <figcaption class="price">Prix : 10 hermines</figcaption>
             <span hidden="hidden" class="descr">Jeu de 12 palets, 10 hermines</span>
@@ -828,7 +828,7 @@
         </div>
         <div class="col-lg-offset-1 col-lg-2 col-md-offset-0 col-md-3 col-sm-offset-0 col-sm-4 col-xs-offset-0 col-xs-6">
           <figure id="decoration_11">
-            <img src="assets/img/decoration/saccabas.jpeg" title="Sac cabas" ref="00074" alt="Sac cabas"/>
+            <img src="assets/img/decoration/saccabas.jpeg" title="Sac cabas" ref="74" alt="Sac cabas"/>
             <figcaption class="titre">Sac cabas</figcaption>
             <figcaption class="price">Prix : 10 hermines</figcaption>
             <span hidden="hidden" class="descr">Sac cabas, 10 hermines</span>
@@ -837,7 +837,7 @@
         </div>
         <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
           <figure id="decoration_12">
-            <img src="assets/img/decoration/jeuxpaletbreton.jpeg" title="Palet breton (jeu)" ref="00075" alt="Palet breton (jeu)"/>
+            <img src="assets/img/decoration/jeuxpaletbreton.jpeg" title="Palet breton (jeu)" ref="75" alt="Palet breton (jeu)"/>
             <figcaption class="titre">Palet breton (jeu)</figcaption>
             <figcaption class="price">Prix : 10 hermines</figcaption>
             <span hidden="hidden" class="descr">Palet breton (jeu), 10 hermines</span>
@@ -846,7 +846,7 @@
         </div>
         <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
           <figure id="decoration_13">
-            <img src="assets/img/decoration/panoplie.jpeg" title="Panoplie" ref="00076" alt="Panoplie"/>
+            <img src="assets/img/decoration/panoplie.jpeg" title="Panoplie" ref="76" alt="Panoplie"/>
             <figcaption class="titre">Panoplie</figcaption>
             <figcaption class="price">Prix : 10 hermines</figcaption>
             <span hidden="hidden" class="descr">Panoplie, 10 hermines</span>
@@ -855,7 +855,7 @@
         </div>
         <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
           <figure id="decoration_14">
-            <img src="assets/img/decoration/plancheetpalet.jpeg" title="Planche et palet" ref="00077" alt="Planche et palet"/>
+            <img src="assets/img/decoration/plancheetpalet.jpeg" title="Planche et palet" ref="77" alt="Planche et palet"/>
             <figcaption class="titre">Planche et palet</figcaption>
             <figcaption class="price">Prix : 10 hermines</figcaption>
             <span hidden="hidden" class="descr">Planche et palet, 10 hermines</span>
@@ -864,7 +864,7 @@
         </div>
         <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
           <figure id="decoration_15">
-            <img src="assets/img/decoration/porteclef.jpeg" title="Porte clef" ref="00077" alt="Porte clef"/>
+            <img src="assets/img/decoration/porteclef.jpeg" title="Porte clef" ref="77" alt="Porte clef"/>
             <figcaption class="titre">Porte-clef</figcaption>
             <figcaption class="price">Prix : 10 hermines</figcaption>
             <span hidden="hidden" class="descr">Porte-clef, 10 hermines</span>
@@ -873,7 +873,7 @@
         </div>
         <div class="col-lg-offset-1 col-lg-2 col-md-offset-0 col-md-3 col-sm-offset-0 col-sm-4 col-xs-offset-0 col-xs-6">
           <figure id="decoration_16">
-            <img src="assets/img/decoration/tassesbretonnes.jpeg" title="Tasses bretonnes" ref="00078" alt="Tasses bretonnes"/>
+            <img src="assets/img/decoration/tassesbretonnes.jpeg" title="Tasses bretonnes" ref="78" alt="Tasses bretonnes"/>
             <figcaption class="titre">Tasses bretonnes</figcaption>
             <figcaption class="price">Prix : 10 hermines</figcaption>
             <span hidden="hidden" class="descr">Tasses bretonnes, 10 hermines</span>
@@ -882,7 +882,7 @@
         </div>
         <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
           <figure id="decoration_17">
-            <img src="assets/img/decoration/tetine.jpeg" title="Tetine" ref="00079" alt="Tetine"/>
+            <img src="assets/img/decoration/tetine.jpeg" title="Tetine" ref="79" alt="Tetine"/>
             <figcaption class="titre">Tétine</figcaption>
             <figcaption class="price">Prix : 10 hermines</figcaption>
             <span hidden="hidden" class="descr">Tetine, 10 hermines</span>
