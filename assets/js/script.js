@@ -12,6 +12,7 @@ $(function(){
       price = price.split(" ");
       // Ajout la partie nombre dans la variable price
       price = price[2];
+      var ref =$('#'+id+'> img').attr('ref');
       var pricetotal = price;
       if($('#tr'+id+'').length > 0 ){
         alert('L\'article a déjà étè selectionner.')
@@ -19,8 +20,8 @@ $(function(){
         value++;
         $('#tabl'+id+' > input').val(value);
       }else {
-      $("tbody").append( "<tr id='tr"+id+"'>" +"<td><img src=\""+ img +"\" class=\"imgbasket\"/></td>" +"<td id='price"+id+"'>"+price+"</td>" +"<td id='tabl"+id+"'><button class='plus'>+</button><input class='price' value='1' disabled/><button class='supp'>-</button></td>"+"<td id='priceTotal"+id+"'><p>"+pricetotal+"</p></td>"+"<td id='supp"+id+"'><a><i class=\"icofont icofont-delete-alt\"></i></a></td>"+"</tr>" );
-      alert('Ajout au panier.');
+      $("tbody").append( "<tr id='tr"+id+"'>" +"<td><img src=\""+ img +"\" class=\"imgbasket\"/></td>"+"<td>"+ref+"</td>"+"<td id='price"+id+"'>"+price+"</td>" +"<td id='tabl"+id+"'><button class='plus'>+</button><input class='price' value='1' disabled/><button class='supp'>-</button></td>"+"<td id='priceTotal"+id+"'><p>"+pricetotal+"</p></td>"+"<td id='supp"+id+"'><a><i class=\"icofont icofont-delete-alt\"></i></a></td>"+"</tr>" );
+      alert('L\'article a étè ajouter au panier.');
       };
 
       // Augmenter la quantité d'un article
