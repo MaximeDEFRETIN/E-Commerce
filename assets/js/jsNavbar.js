@@ -8,7 +8,7 @@ $(function(){
     $('#ustensils').hide();
     $('#music').hide();
     $('#books').hide();
-    $('#Clothes').hide();
+    $('#clothes').hide();
   });
   $('#navGame').click(function(){
     $('#decoration').show();
@@ -16,10 +16,10 @@ $(function(){
     $('#ustensils').hide();
     $('#music').hide();
     $('#books').hide();
-    $('#Clothes').hide();
+    $('#clothes').hide();
   });
   $('#navVet').click(function(){
-    $('#Clothes').show();
+    $('#clothes').show();
     $('#food').hide();
     $('#decoration').hide();
     $('#ustensils').hide();
@@ -32,7 +32,7 @@ $(function(){
     $('#decoration').hide();
     $('#music').hide();
     $('#books').hide();
-    $('#Clothes').hide();
+    $('#clothes').hide();
   });
   $('#navMu').click(function(){
     $('#music').show();
@@ -40,7 +40,7 @@ $(function(){
     $('#decoration').hide();
     $('#ustensils').hide();
     $('#books').hide();
-    $('#Clothes').hide();
+    $('#clothes').hide();
   });
   $('#navBo').click(function(){
     $('#books').show();
@@ -48,6 +48,6 @@ $(function(){
     $('#decoration').hide();
     $('#ustensils').hide();
     $('#music').hide();
-    $('#Clothes').hide();
+    $('#clothes').hide();
   });
 });

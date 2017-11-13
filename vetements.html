@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/iconfonts.css">
+  <link rel="stylesheet" href="assets/css/icofont.css">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Le pti Breton</title>
 <style>
 img {
@@ -18,14 +19,18 @@ img {
     top: 0;
     right: 0;
     left: 0;
-    height: 300px;
+    min-height: 100px;
     padding: .5em;
     background: #000;
     background: rgba(0, 0, 0, .60);
     color: #fff;
 }
+.ui-dialog{
+  background: red;
+}
 #dialog-confirm{
   background: red;
+  width: 1000px;
 }
 </style>
 </head>
@@ -48,6 +53,7 @@ img {
             <li><a href="#">Musiques</a></li>
             <li><a href="#">Livres</a></li>
             <li><a href="#">Jeux - Décos</a></li>
+            <li><button type="button" class="btn btn-info btn-lg" id="myBtn">Open Modal</button></li>
           </ul>
       </div>
     </nav>
@@ -62,16 +68,16 @@ img {
           <figure id='clothes-man-1'>
             <img src="assets/img/vetements/homme/breton1.jpg" title="breton1" alt="Tee-shirt Noir Humoristique Breton Ecolo Pas Alcoolo" height="300px" width="300px"></img>
             <figcaption>Tee-shirt Noir Humoristique Breton Ecolo Pas Alcoolo </figcaption>
-            <figcaption class="price">Prix: 14hermines</figcaption>
+            <figcaption class="price">Prix: 14 hermines</figcaption>
             <span hidden="hidden" class="descr">Tee-shirt Noir portant l'inscription "En Bretagne on n'est pas Alcoolo, on est écolo, on boit de l'alcool pour économiser de l'eau" </span>
-            <input type="button" name="panier" value="Panier">
+            <input type="button" name="panier" value="Panier" class="clothes-man-1">
           </figure>
         </div>
         <div class="col-lg-2">
           <figure id='clothes-man-2'>
             <img src="assets/img/vetements/homme/breton2.jpg" title="breton2" alt="T-shirt Parfait Breton T-shirt Homme Teezily" height="300px" width="300px"></img>
             <figcaption>T-shirt Parfait - Breton T-shirt Homme Teezily</figcaption>
-            <figcaption class="price">Prix: 19hermines</figcaption>
+            <figcaption class="price">Prix: 19 hermines</figcaption>
             <span hidden="hidden" class='descr'>T-shirt Homme Teezily T-shirt Parfait - Breton. Imposez votre style et optez pour les produits personnalisés TEEZILY. Spécialiste de l'impression à la demande, nous proposons des designs fun et tendance ! N'hésitez plus et venez découvrir nos références disponibles dans de nombreuses couleurs. </span>
             <input type="button" name="panier" value="Panier">
           </figure>
@@ -129,7 +135,7 @@ img {
           <figure id='clothes-wife-3'>
             <img src="assets/img/vetements/femme/breton5.jpg" title="breton3" alt="Hauts à Manches Longues Femme" height="300px" width="300px"></img>
             <figcaption>Hauts à Manches Longues Femme</figcaption>
-            <figcaption class="price">Prix: 27hermines</figcaption>
+            <figcaption class="price">Prix: <p>27</p>hermines</figcaption>
             <span hidden="hidden" class='descr'>Ce pull en maille fin a été tricoté en fils de mélange viscose et d'acotton. La conception droppedshoulder est soulignée par les bandes de horizontalknitted sur cette encolure bateau en tricot. Longueur milieu dos est 63cm taille petit.</span>
             <input type="button" name="panier" value="Panier">
           </figure>
@@ -138,7 +144,7 @@ img {
           <figure id='clothes-wife-4'>
             <img src="assets/img/vetements/femme/breton4.jpg" title="breton4" alt="Bretagne Trop Breizh Pour Toi T-shirt Femme à manches retroussées" height="300px" width="300px"></img>
             <figcaption>Bretagne Trop Breizh Pour Toi T-shirt Femme à manches retroussées </figcaption>
-            <figcaption class="price">Prix: 20hermines</figcaption>
+            <figcaption class="price">Prix: <p>20</p>hermines</figcaption>
             <span hidden="hidden" class='descr'>Dans cette question se cachent beaucoup de choses typiquement bretonnes comme une galette bretonne, une moucheture d'hermine, une harpe, un triskèle, un phare et un menhir. Une typographie pour les fans de la Bretagne.Ce T-shirt à la coupe décontractée et au style Boyfriend est parfait pour vos après-midi de détente ou vos soirées relax entre amis.</span>
             <input type="button" name="panier" value="Panier">
           </figure>
@@ -147,7 +153,7 @@ img {
           <figure id='clothes-wife-5'>
             <img src="assets/img/vetements/femme/fchaussette.jpg" title="breton5" alt="Gant Premium Rayure Bretonne En Coton Doux Chaussettes Hommes, Rose/marine" height="300px" width="300px"></img>
             <figcaption>Gant Premium Rayure Bretonne En Coton Doux Chaussettes Hommes, Rose/marine</figcaption>
-            <figcaption class="price">Prix: 14hermines</figcaption>
+            <figcaption class="price">Prix: <p>14</p>hermines</figcaption>
             <span hidden="hidden" class='descr'>Chaussettes rayé femme vibrant de Gant. Ces femmes chaussettes caractéristique d'un design audacieux de Breton rayé en rose et bleu marine, avec poignées de cheville côtelée et contraste Gant branding. Contrasté talon, cheville et les orteils. Tissu plus beau coton peigné et une exécution parfaite fournissent une usure distinctive pour le confort</span>
             <input type="button" name="panier" value="Panier">
           </figure>
@@ -160,7 +166,7 @@ img {
           <figure id='clothes-child-1'>
             <img src="assets/img/vetements/enfant/breton1.jpg" title="breton1" alt="Inspire par Breton Envy You're A Tourist Officieux Sweat a Capuche des Enfants " height="300px" width="300px"></img>
             <figcaption>Inspire par Breton Envy You're A Tourist Officieux Sweat a Capuche des Enfants </figcaption>
-            <figcaption class="price">Prix: 30hermines</figcaption>
+            <figcaption class="price">Prix: <p>30</p>hermines</figcaption>
             <span hidden="hidden" class='descr'>Ce Inspire par Breton Envy You're A Tourist Officieux Sweat a capuche est une conception originale de Inspired Apparel. Ce sweat a capuche peut egalement etre achete dans des styles d'adultes et est disponible dans une variete de tailles et de couleurs </span>
             <input type="button" name="panier" value="Panier">
           </figure>
@@ -169,7 +175,7 @@ img {
           <figure id='clothes-child-2'>
             <img src="assets/img/vetements/enfant/breton2.jpg" title="breton2" alt="Inspire par Breton Envy You're A Tourist Officieux Sweat-Shirt des Enfants " height="300px" width="300px"></img>
             <figcaption>Inspire par Breton Envy You're A Tourist Officieux Sweat-Shirt des Enfants </figcaption>
-            <figcaption class="price">Prix: 19hermines</figcaption>
+            <figcaption class="price">Prix: <p>19</p>hermines</figcaption>
             <span hidden="hidden" class='descr'>Ce Inspire par Breton Envy You're A Tourist Officieux Sweat-Shirt est une conception originale de Inspired Apparel. Ce chandail peut egalement etre achete dans des styles d'adultes et est disponible dans une variete de tailles et de couleurs.</span>
             <input type="button" name="panier" value="Panier">
           </figure>
@@ -178,7 +184,7 @@ img {
           <figure id='clothes-child-3'>
             <img src="assets/img/vetements/enfant/breton3.jpg" title="breton3" alt="Armor Lux - tee-shirt " height="300px" width="300px"></img>
             <figcaption>Bretagne Made In Breizh Pur Breton Body bébé bio manches courtes</figcaption>
-            <figcaption class="price">Prix: 20hermines</figcaption>
+            <figcaption class="price">Prix: <p>20</p>hermines</figcaption>
             <span hidden="hidden" class='descr'>Si vous êtes né(e) en Bretagne, montrez à quel point vous êtes fier de venir de la Breizh avec ce design au style d'une estampille. C'est seulement pour ceux qui sont à 100% pur Bretons.</span>
             <input type="button" name="panier" value="Panier">
           </figure>
@@ -187,7 +193,7 @@ img {
           <figure id='clothes-child-4'>
             <img src="assets/img/vetements/enfant/breton4.jpg" title="breton4" alt="Noppies B Tee Ls Ida, T-Shirt Manches Longues Mixte Bébé" height="300px" width="300px"></img>
             <figcaption>Noppies B Tee Ls Ida, T-Shirt Manches Longues Mixte Bébé</figcaption>
-            <figcaption class="price">Prix: 14hermines</figcaption>
+            <figcaption class="price">Prix: <p>14</p>hermines</figcaption>
             <span hidden="hidden" class='descr'>Le shirt bébé Deforest de Noppies est pourvu d'un motif à rayures breton et d'un texte imprimé couleur néon. Un basique qui permet des combinaisons illimitées.Les boutons-pression pratiques dans le cou facilitent l'habillage. </span>
             <input type="button" name="panier" value="Panier">
           </figure>
@@ -196,7 +202,7 @@ img {
           <figure id='clothes-child-5'>
             <img src="assets/img/vetements/enfant/breton5.jpg" title="breton5" alt="Splash About Ensemble haut et short pour enfant Protection anti-UV " height="300px" width="300px"></img>
             <figcaption>Splash About Ensemble haut et short pour enfant Protection anti-UV </figcaption>
-            <figcaption class="price">Prix: 38hermines</figcaption>
+            <figcaption class="price">Prix: <p>38</p>hermines</figcaption>
             <span hidden="hidden" class='descr'>Doux et agréable au porter et superbe belle allure. Plutôt que le Tout En Un, les Ensembles Sous le Soleil peuvent éviter beaucoup de perte de temps (et peuvent donc éviter de petits accidents embarrassants) pour les jeunes enfants qui en aurait besoin, grâce au Short.</span>
             <input type="button" name="panier" value="Panier">
           </figure>
@@ -209,7 +215,7 @@ img {
           <figure id='accessory-1'>
             <img src="assets/img/vetements/accessoire/bonnet.jpg" title="bonnet" alt="PATOUTATIS - Bob marin coton docker motif TRISKEL breton bretagne - mixte homme / femme " height="300px" width="300px"></img>
             <figcaption>PATOUTATIS - Bob marin coton docker motif TRISKEL breton bretagne - mixte homme / femme </figcaption>
-            <figcaption class="price">Prix: 17hermines</figcaption>
+            <figcaption class="price">Prix: <p>17</p>hermines</figcaption>
             <span hidden="hidden" class='descr'>Bob. Mixte. Surpiqûres sur bord. 100% coton brossé lourd. 4 oeillets d'aération Oeillets d'aérations brodés. Bandeau de transpiration satin. Fermeture Velcro. Broderie sur le devant </span>
             <input type="button" name="panier" value="Panier">
           </figure>
@@ -218,7 +224,7 @@ img {
           <figure id='accessory-2'>
             <img src="assets/img/vetements/accessoire/casquette.jpg" title="casquette" alt="sterkowski hommes de style pêcheur maciejówka Fiddler Casquette " height="300px" width="300px"></img>
             <figcaption>Sterkowski hommes de style pêcheur maciejówka Fiddler Casquette </figcaption>
-            <figcaption class="price">Prix: 29hermines</figcaption>
+            <figcaption class="price">Prix: <p>29</p>hermines</figcaption>
             <span hidden="hidden" class='descr'>Une casquette « oldschool » à visière qui fait penser à une casquette de capitaine</span>
             <input type="button" name="panier" value="Panier">
           </figure>
@@ -227,45 +233,118 @@ img {
           <figure id='accessory-3'>
             <img id='test' src="assets/img/vetements/accessoire/parapluie.jpg" title="breton3" alt="parapluie breton motifs breton" height="300px" width="300px"></img>
             <figcaption>Parapluie breton motifs breton</figcaption>
-            <figcaption class="price">Prix: 40hermines</figcaption>
+            <figcaption class="price">Prix: 40</figcaption>
             <span hidden="hidden" class='descr'>Parapluie breton d 1.08m </span>
-            <input type="button" name="panier" value="Panier">
+            <input type="button" name="panier" value="Panier" id='basket'>
           </figure>
         </div>
     </div>
+  </div>
   </section>
-  <div id="dialog-confirm" title="Empty the recycle bin?">
-  <p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>These items will be permanently deleted and cannot be recovered. Are you sure?</p>
-</div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
 
-<p>Sed vel diam id libero <a href="http://example.com">rutrum convallis</a>. Donec aliquet leo vel magna. Phasellus rhoncus faucibus ante. Etiam bibendum, enim faucibus aliquet rhoncus, arcu felis ultricies neque, sit amet auctor elit eros a lectus.</p>
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Panier</h4>
+        </div>
+        <div class="modal-body">
+          <table id='blabla' style="width:100%">
+          <tr>
+            <th>Produit</th>
+            <th>Prix / unité</th>
+            <th>Quantité</th>
+            <th>Prix total</th>
+          </tr>
+          </table>
+          <p></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <style>
+  .imgbasket{
+    width: 100px;
+  }
+  </style>
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script>
     $(function(){
-      $( "#dialog-confirm" ).dialog({
-        resizable: false,
-        height: "auto",
-        width: 400,
-        modal: true,
-        buttons: {
-          "Delete all items": function() {
-            $( this ).dialog( "close" );
-          },
-          Cancel: function() {
-            $( this ).dialog( "close" );
+      var click = 0;
+      // Quand on clique sur le panier d'un article
+       $("figure > input").on("click",function(id){
+         // Recuperer id du parent de input
+         var id=$(this).parent("figure").attr("id");;;
+         // recuperer src de article actuelle
+          var img =$('#'+id+' > img').attr('src');
+          // recuperer le price
+          var price=$('#'+id+' .price').text();
+          // split de price pou récuperer la partie nombre
+          price = price.split(" ");
+          // Ajout la partie nombre dans la variable price
+          price = price[1];
+          var pricetotal = price;
+          if($('#tr'+id+'').length > 0 ){
+            alert('L\'article a déjà étè selectionner.')
+          }else {
+          $("tbody").append( "<tr id='tr"+id+"'>" +"<td><img src=\""+ img +"\" class=\"imgbasket\"/></td>" +"<td id='price"+id+"'>"+price+"</td>" +"<td id='tabl"+id+"'><button id='plus'>+</button><input value='1' disabled/><button id='supp'>-</button></td>"+"<td id='priceTotal"+id+"'><p>"+pricetotal+"</p></td>"+"<td id='supp"+id+"'><a><i class=\"icofont icofont-delete-alt\"></i></a></td>"+"</tr>" );
+          alert('Ajout au panier.');
+          };
+          // Augmenter la quantité d'un article
+          $('#tabl'+id+' > #plus').click(function() {
+            // Récuperer la value de l'input de l'article
+            var value = $('#tabl'+id+' > input').val();
+            console.log(value++);
+            // Prend la value et on fait +1
+            // value = parseInt(value) + 1;
+              // console.log(value);
+            // Ajouter la value dans l'input
+            $('#tabl'+id+' > input').val(value);
+            var valeur = $('#price'+id+'').text();
+            valeur = parseInt(valeur);
+            pricetotal = valeur * value;
+            $('#priceTotal'+id+'> p').text(pricetotal);
+        });
+        // Baisse la quantité d'une article
+        $('#tabl'+id+' > #supp').click(function() {
+          // Récuperer la value de l'input de l'article
+          var value = $('#tabl'+id+' > input').val();
+          // Prend la value et on fait -1
+          value--;
+          // Ajouter la value dans l'input
+          $('#tabl'+id+' > input').val(value);
+          pricetotal = pricetotal - price;
+          $('#priceTotal'+id+'> p').text(pricetotal);
+          // Si value de l'input = 0 alors on supprime la ligne du tableau
+          if(value == 0){
+            $('#tr'+id+'').remove();
           }
-        }
+        });
+        $('#supp'+id+' > a').click(function(){
+          $('#tr'+id+'').remove();
+        });
       });
 
+      $("#myBtn").click(function(){
+        $("#myModal").modal();
+      });
       $('figure').hover(function(){
          $('#'+this.id +' span').show();
 
        }, function() {
          $('#'+this.id +' span').hide();
-     })
+     });
+
      /*$( "#dialog" ).dialog({
        autoOpen: false,
        show: {

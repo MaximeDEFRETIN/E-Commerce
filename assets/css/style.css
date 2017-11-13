@@ -9,6 +9,26 @@
     font-weight: normal;
     font-style: normal;
 }
+img {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+    height: 250px;
+    width: 200px;
+}
+.descr{
+    position: absolute;
+    top: 0;
+    right: 100;
+    left: 10;
+    height: 200px;
+    width: 200px;
+    padding: .5em;
+    background: #000;
+    background: rgba(0, 0, 0, .60);
+    color: #fff;
+}
 header{
   background-color: white;
   padding: 0;
@@ -24,8 +44,8 @@ header .row{
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
   border: 2px solid black;
   position:relative;
-  height:350px;
-  width: 350px;
+  height:250px;
+  width: 250px;
   margin: auto;
 }
 body {
@@ -37,22 +57,30 @@ body {
   background-size: 40%;
   background-position: 550px 150px;
 }
+<<<<<<< HEAD
 ul, .navbar-brand {
+=======
+ul, #produit{
+>>>>>>> 8f529cbe673d416aab3fe778800dc877b3a23f16
   font-family: 'kingthings_callicalligraphica';
   font-size: 30px;
 }
-h2 {
+h2{
   font-family: 'kingthings_callicalligraphica';
   font-size: 50px;
   margin-bottom: 35px;
   margin-left: 15px;
+  font-weight: bold;
+  color: black ;
 }
 figure {
-  height: 400px;
+  height: 350px;
   width: 200px
 }
 figure img {
   width: 200px;
+  min-height: 100px;
+  max-height: 200px;
   border-top: 3px solid black;
   border-left: 3px solid black;
   border-right: 3px solid black;
@@ -73,10 +101,44 @@ figure img {
 }
 figure button {
   margin-top: 5px;
-  margin-left: 60px;
+  margin-left: 70px;
 }
 .imgbasket{
   width : 100px
+}
+.arrowUp{
+  color:black;
+  position:fixed;
+  right:75px;
+  bottom:75px;
+  font-size:250%;
+}
+.arrowUp:hover{
+  color:black;
+}
+.descr{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: .5em;
+    background: #000;
+    background: rgba(0, 0, 0, .60);
+    color: #fff;
+    margin-left: 15px;
+    overflow:hidden; /* permet de caché le texte qui dépasse du cadre */
+}
+#clothes{
+  margin-top: 0px;
+  text-align: left;
+}
+h1{
+  margin-top: 50px;
+}
+@media screen and (min-width: 200px) and (max-width: 475px)  {
+  h1{
+    margin-top: 30px;
+  }
 }
 @media screen and (min-width: 200px) and (max-width: 390px)  {
   figure img {
@@ -90,11 +152,21 @@ figure button {
   body{
     background-position: 100px 150px;
   }
-  figure input{
+  figure button{
     margin-left: 30px;
+  }
+  .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    height:150px;
+    width: 150px;
+  }
+  .hermine{
+    width: 130px;
   }
 }
 @media screen and (min-width: 391px) and (max-width: 499px)  {
+  .hermine{
+    width: 130px;
+  }
   figure img {
       width: 150px;
       height: 150px;
@@ -109,8 +181,12 @@ figure button {
   section{
     margin-left: 30px;
   }
-  figure input{
+  figure button{
     margin-left: 40px;
+  }
+  .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    height:150px;
+    width: 150px;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 767px)  {
@@ -128,17 +204,57 @@ figure button {
   section{
     margin-left: 85px;
   }
+  .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    height:150px;
+    width: 150px;
+  }
 }
-
-.arrowUp{
-  color:black;
-  position:fixed;
-  right:75px;
-  bottom:75px;
-  font-size:250%;
+@media screen and (min-width: 768px) and (max-width: 899px)  {
+  section{
+    margin-left: 35px;
+  }
+  body{
+    background-position: 250px 150px;
+  }
+  ul, #produit{
+    font-size: 19px;
+  }
+  figure img {
+      width: 150px;
+      height: 150px;
+  }
+  figure{
+    width: 150px;
+    height: 320px;
+  }
 }
-.arrowUp:hover{
-  color:black;
+@media screen and (min-width: 900px) and (max-width: 991px)  {
+  section{
+    margin-left: 65px;
+  }
+  body{
+    background-position: 300px 150px;
+  }
+  ul, #produit{
+    font-size: 24px;
+  }
 }
-
-/* Faire une mediaquery sur figure avec un width de 150px en xs */
+@media screen and (min-width: 992px) and (max-width: 1199px)  {
+  body{
+    background-position: 350px 150px;
+  }
+  ul, #produit{
+    font-size: 27px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1500px)  {
+  body{
+    background-position: 350px 150px;
+  }
+  div.col-lg-offset-1.col-lg-2{
+    margin-left:  30px;
+  }
+  div.col-lg-2{
+    margin-left:  15px;
+  }
+}
