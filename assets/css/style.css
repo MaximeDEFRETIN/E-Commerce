@@ -57,11 +57,7 @@ body {
   background-size: 40%;
   background-position: 550px 150px;
 }
-<<<<<<< HEAD
-ul, .navbar-brand {
-=======
-ul, #produit{
->>>>>>> 8f529cbe673d416aab3fe778800dc877b3a23f16
+ul, #produit {
   font-family: 'kingthings_callicalligraphica';
   font-size: 30px;
 }
