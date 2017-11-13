@@ -38,7 +38,7 @@ $(function(){
       $('#tr'+id+'').remove();
     });
   });
-$('.myBtn').on("click",function () {
+$('#myBtn').on("click",function () {
   // Augmenter la quantité d'un article
   $('.plus').click(function() {
     // Récuperer la value de l'input de l'article
@@ -83,7 +83,7 @@ $('.myBtn').on("click",function () {
     }
   });
 });
-  $(".myBtn").click(function(){
+  $("#myBtn").click(function(){
     $("#myModal").modal();
   });
   $('figure').hover(function(){
